@@ -1,0 +1,314 @@
+[
+  {
+    "json": "source/Yerushalmi/zraim/yeru-brachot.json",
+    "masechet": "ברכות",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Berakhot",
+    "chapters": 9,
+    "halachot": 58
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-peah.json",
+    "masechet": "פאה",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Peah",
+    "chapters": 8,
+    "halachot": 55
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-demai.json",
+    "masechet": "דמאי",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Demai",
+    "chapters": 7,
+    "halachot": 44
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-kilayim.json",
+    "masechet": "כלאים",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Kilayim",
+    "chapters": 9,
+    "halachot": 56
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-shviit.json",
+    "masechet": "שביעית",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Sheviit",
+    "chapters": 10,
+    "halachot": 56
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-trumot.json",
+    "masechet": "תרומות",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Terumot",
+    "chapters": 11,
+    "halachot": 48
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-maasrot.json",
+    "masechet": "מעשרות",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Maasrot",
+    "chapters": 5,
+    "halachot": 20
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-maaser-sheni.json",
+    "masechet": "מעשר שני",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Maaser Sheni",
+    "chapters": 5,
+    "halachot": 24
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-chala.json",
+    "masechet": "חלה",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Challah",
+    "chapters": 4,
+    "halachot": 19
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-orla.json",
+    "masechet": "ערלה",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Orlah",
+    "chapters": 3,
+    "halachot": 21
+  },
+  {
+    "json": "source/Yerushalmi/zraim/yeru-bikurim.json",
+    "masechet": "בכורים",
+    "seder": "zraim",
+    "sefaria_ref": "Jerusalem Talmud Bikkurim",
+    "chapters": 3,
+    "halachot": 21
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-shabat.json",
+    "masechet": "שבת",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Shabbat",
+    "chapters": 24,
+    "halachot": 141
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-eruvin.json",
+    "masechet": "עירובין",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Eruvin",
+    "chapters": 10,
+    "halachot": 94
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-psachim.json",
+    "masechet": "פסחים",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Pesachim",
+    "chapters": 10,
+    "halachot": 86
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-yoma.json",
+    "masechet": "יומא",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Yoma",
+    "chapters": 8,
+    "halachot": 51
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-shkalim.json",
+    "masechet": "שקלים",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Shekalim",
+    "chapters": 8,
+    "halachot": 32
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-suka.json",
+    "masechet": "סוכה",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Sukkah",
+    "chapters": 5,
+    "halachot": 49
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-rosh-hashana.json",
+    "masechet": "ראש השנה",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Rosh Hashanah",
+    "chapters": 4,
+    "halachot": 36
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-beiza.json",
+    "masechet": "ביצה",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Beitzah",
+    "chapters": 5,
+    "halachot": 46
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-taanit.json",
+    "masechet": "תענית",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Taanit",
+    "chapters": 4,
+    "halachot": 40
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-megila.json",
+    "masechet": "מגילה",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Megillah",
+    "chapters": 4,
+    "halachot": 38
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-chagiga.json",
+    "masechet": "חגיגה",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Chagigah",
+    "chapters": 3,
+    "halachot": 23
+  },
+  {
+    "json": "source/Yerushalmi/moed/yeru-moed-katan.json",
+    "masechet": "מועד קטן",
+    "seder": "moed",
+    "sefaria_ref": "Jerusalem Talmud Moed Katan",
+    "chapters": 3,
+    "halachot": 24
+  },
+  {
+    "json": "source/Yerushalmi/nashim/yeru-yevamot.json",
+    "masechet": "יבמות",
+    "seder": "nashim",
+    "sefaria_ref": "Jerusalem Talmud Yevamot",
+    "chapters": 16,
+    "halachot": 143
+  },
+  {
+    "json": "source/Yerushalmi/nashim/yeru-sota.json",
+    "masechet": "סוטה",
+    "seder": "nashim",
+    "sefaria_ref": "Jerusalem Talmud Sotah",
+    "chapters": 9,
+    "halachot": 73
+  },
+  {
+    "json": "source/Yerushalmi/nashim/yeru-ktubot.json",
+    "masechet": "כתובות",
+    "seder": "nashim",
+    "sefaria_ref": "Jerusalem Talmud Ketubot",
+    "chapters": 13,
+    "halachot": 120
+  },
+  {
+    "json": "source/Yerushalmi/nashim/yeru-nedarim.json",
+    "masechet": "נדרים",
+    "seder": "nashim",
+    "sefaria_ref": "Jerusalem Talmud Nedarim",
+    "chapters": 11,
+    "halachot": 94
+  },
+  {
+    "json": "source/Yerushalmi/nashim/yeru-nazir.json",
+    "masechet": "נזיר",
+    "seder": "nashim",
+    "sefaria_ref": "Jerusalem Talmud Nazir",
+    "chapters": 9,
+    "halachot": 55
+  },
+  {
+    "json": "source/Yerushalmi/nashim/yeru-gitin.json",
+    "masechet": "גיטין",
+    "seder": "nashim",
+    "sefaria_ref": "Jerusalem Talmud Gittin",
+    "chapters": 9,
+    "halachot": 75
+  },
+  {
+    "json": "source/Yerushalmi/nashim/yeru-kidushin.json",
+    "masechet": "קידושין",
+    "seder": "nashim",
+    "sefaria_ref": "Jerusalem Talmud Kiddushin",
+    "chapters": 4,
+    "halachot": 43
+  },
+  {
+    "json": "source/Yerushalmi/nezikin/yeru-kama.json",
+    "masechet": "בבא קמא",
+    "seder": "nezikin",
+    "sefaria_ref": "Jerusalem Talmud Bava Kamma",
+    "chapters": 10,
+    "halachot": 85
+  },
+  {
+    "json": "source/Yerushalmi/nezikin/yeru-metzia.json",
+    "masechet": "בבא מציעא",
+    "seder": "nezikin",
+    "sefaria_ref": "Jerusalem Talmud Bava Metzia",
+    "chapters": 10,
+    "halachot": 84
+  },
+  {
+    "json": "source/Yerushalmi/nezikin/yeru-batra.json",
+    "masechet": "בבא בתרא",
+    "seder": "nezikin",
+    "sefaria_ref": "Jerusalem Talmud Bava Batra",
+    "chapters": 10,
+    "halachot": 76
+  },
+  {
+    "json": "source/Yerushalmi/nezikin/yeru-sanhedrin.json",
+    "masechet": "סנהדרין",
+    "seder": "nezikin",
+    "sefaria_ref": "Jerusalem Talmud Sanhedrin",
+    "chapters": 11,
+    "halachot": 89
+  },
+  {
+    "json": "source/Yerushalmi/nezikin/yeru-shvuot.json",
+    "masechet": "שבועות",
+    "seder": "nezikin",
+    "sefaria_ref": "Jerusalem Talmud Shevuot",
+    "chapters": 8,
+    "halachot": 58
+  },
+  {
+    "json": "source/Yerushalmi/nezikin/yeru-avoda-zara.json",
+    "masechet": "עבודה זרה",
+    "seder": "nezikin",
+    "sefaria_ref": "Jerusalem Talmud Avodah Zarah",
+    "chapters": 5,
+    "halachot": 60
+  },
+  {
+    "json": "source/Yerushalmi/nezikin/yeru-makot.json",
+    "masechet": "מכות",
+    "seder": "nezikin",
+    "sefaria_ref": "Jerusalem Talmud Makkot",
+    "chapters": 3,
+    "halachot": 28
+  },
+  {
+    "json": "source/Yerushalmi/nezikin/yeru-horayot.json",
+    "masechet": "הוריות",
+    "seder": "nezikin",
+    "sefaria_ref": "Jerusalem Talmud Horayot",
+    "chapters": 3,
+    "halachot": 20
+  },
+  {
+    "json": "source/Yerushalmi/taharot/yeru-nida.json",
+    "masechet": "נדה",
+    "seder": "taharot",
+    "sefaria_ref": "Jerusalem Talmud Niddah",
+    "chapters": 4,
+    "halachot": 19
+  }
+]

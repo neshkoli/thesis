@@ -1,0 +1,298 @@
+[
+  {
+    "json": "source/Bavli/zraim/berakhot.json",
+    "masechet": "ברכות",
+    "seder": "zraim",
+    "sefaria_ref": "Berakhot",
+    "chapters": 125,
+    "halachot": 125
+  },
+  {
+    "json": "source/Bavli/moed/shabbat.json",
+    "masechet": "שבת",
+    "seder": "moed",
+    "sefaria_ref": "Shabbat",
+    "chapters": 312,
+    "halachot": 312
+  },
+  {
+    "json": "source/Bavli/moed/eruvin.json",
+    "masechet": "עירובין",
+    "seder": "moed",
+    "sefaria_ref": "Eruvin",
+    "chapters": 207,
+    "halachot": 207
+  },
+  {
+    "json": "source/Bavli/moed/pesachim.json",
+    "masechet": "פסחים",
+    "seder": "moed",
+    "sefaria_ref": "Pesachim",
+    "chapters": 240,
+    "halachot": 240
+  },
+  {
+    "json": "source/Bavli/moed/rosh-hashanah.json",
+    "masechet": "ראש השנה",
+    "seder": "moed",
+    "sefaria_ref": "Rosh Hashanah",
+    "chapters": 67,
+    "halachot": 67
+  },
+  {
+    "json": "source/Bavli/moed/yoma.json",
+    "masechet": "יומא",
+    "seder": "moed",
+    "sefaria_ref": "Yoma",
+    "chapters": 173,
+    "halachot": 173
+  },
+  {
+    "json": "source/Bavli/moed/sukkah.json",
+    "masechet": "סוכה",
+    "seder": "moed",
+    "sefaria_ref": "Sukkah",
+    "chapters": 110,
+    "halachot": 110
+  },
+  {
+    "json": "source/Bavli/moed/beitzah.json",
+    "masechet": "ביצה",
+    "seder": "moed",
+    "sefaria_ref": "Beitzah",
+    "chapters": 78,
+    "halachot": 78
+  },
+  {
+    "json": "source/Bavli/moed/taanit.json",
+    "masechet": "תענית",
+    "seder": "moed",
+    "sefaria_ref": "Taanit",
+    "chapters": 59,
+    "halachot": 59
+  },
+  {
+    "json": "source/Bavli/moed/megillah.json",
+    "masechet": "מגילה",
+    "seder": "moed",
+    "sefaria_ref": "Megillah",
+    "chapters": 61,
+    "halachot": 61
+  },
+  {
+    "json": "source/Bavli/moed/moed-katan.json",
+    "masechet": "מועד קטן",
+    "seder": "moed",
+    "sefaria_ref": "Moed Katan",
+    "chapters": 55,
+    "halachot": 55
+  },
+  {
+    "json": "source/Bavli/moed/chagigah.json",
+    "masechet": "חגיגה",
+    "seder": "moed",
+    "sefaria_ref": "Chagigah",
+    "chapters": 51,
+    "halachot": 51
+  },
+  {
+    "json": "source/Bavli/nashim/yevamot.json",
+    "masechet": "יבמות",
+    "seder": "nashim",
+    "sefaria_ref": "Yevamot",
+    "chapters": 242,
+    "halachot": 242
+  },
+  {
+    "json": "source/Bavli/nashim/ketubot.json",
+    "masechet": "כתובות",
+    "seder": "nashim",
+    "sefaria_ref": "Ketubot",
+    "chapters": 222,
+    "halachot": 222
+  },
+  {
+    "json": "source/Bavli/nashim/nedarim.json",
+    "masechet": "נדרים",
+    "seder": "nashim",
+    "sefaria_ref": "Nedarim",
+    "chapters": 180,
+    "halachot": 180
+  },
+  {
+    "json": "source/Bavli/nashim/nazir.json",
+    "masechet": "נזיר",
+    "seder": "nashim",
+    "sefaria_ref": "Nazir",
+    "chapters": 129,
+    "halachot": 129
+  },
+  {
+    "json": "source/Bavli/nashim/sotah.json",
+    "masechet": "סוטה",
+    "seder": "nashim",
+    "sefaria_ref": "Sotah",
+    "chapters": 96,
+    "halachot": 96
+  },
+  {
+    "json": "source/Bavli/nashim/gittin.json",
+    "masechet": "גיטין",
+    "seder": "nashim",
+    "sefaria_ref": "Gittin",
+    "chapters": 178,
+    "halachot": 178
+  },
+  {
+    "json": "source/Bavli/nashim/kiddushin.json",
+    "masechet": "קידושין",
+    "seder": "nashim",
+    "sefaria_ref": "Kiddushin",
+    "chapters": 162,
+    "halachot": 162
+  },
+  {
+    "json": "source/Bavli/nezikin/bava-kamma.json",
+    "masechet": "בבא קמא",
+    "seder": "nezikin",
+    "sefaria_ref": "Bava Kamma",
+    "chapters": 236,
+    "halachot": 236
+  },
+  {
+    "json": "source/Bavli/nezikin/bava-metzia.json",
+    "masechet": "בבא מציעא",
+    "seder": "nezikin",
+    "sefaria_ref": "Bava Metzia",
+    "chapters": 235,
+    "halachot": 235
+  },
+  {
+    "json": "source/Bavli/nezikin/bava-batra.json",
+    "masechet": "בבא בתרא",
+    "seder": "nezikin",
+    "sefaria_ref": "Bava Batra",
+    "chapters": 350,
+    "halachot": 350
+  },
+  {
+    "json": "source/Bavli/nezikin/sanhedrin.json",
+    "masechet": "סנהדרין",
+    "seder": "nezikin",
+    "sefaria_ref": "Sanhedrin",
+    "chapters": 224,
+    "halachot": 224
+  },
+  {
+    "json": "source/Bavli/nezikin/makkot.json",
+    "masechet": "מכות",
+    "seder": "nezikin",
+    "sefaria_ref": "Makkot",
+    "chapters": 46,
+    "halachot": 46
+  },
+  {
+    "json": "source/Bavli/nezikin/shevuot.json",
+    "masechet": "שבועות",
+    "seder": "nezikin",
+    "sefaria_ref": "Shevuot",
+    "chapters": 96,
+    "halachot": 96
+  },
+  {
+    "json": "source/Bavli/nezikin/avodah-zarah.json",
+    "masechet": "עבודה זרה",
+    "seder": "nezikin",
+    "sefaria_ref": "Avodah Zarah",
+    "chapters": 150,
+    "halachot": 150
+  },
+  {
+    "json": "source/Bavli/nezikin/horayot.json",
+    "masechet": "הוריות",
+    "seder": "nezikin",
+    "sefaria_ref": "Horayot",
+    "chapters": 25,
+    "halachot": 25
+  },
+  {
+    "json": "source/Bavli/kodashim/zevachim.json",
+    "masechet": "זבחים",
+    "seder": "kodashim",
+    "sefaria_ref": "Zevachim",
+    "chapters": 238,
+    "halachot": 238
+  },
+  {
+    "json": "source/Bavli/kodashim/menachot.json",
+    "masechet": "מנחות",
+    "seder": "kodashim",
+    "sefaria_ref": "Menachot",
+    "chapters": 217,
+    "halachot": 217
+  },
+  {
+    "json": "source/Bavli/kodashim/chullin.json",
+    "masechet": "חולין",
+    "seder": "kodashim",
+    "sefaria_ref": "Chullin",
+    "chapters": 281,
+    "halachot": 281
+  },
+  {
+    "json": "source/Bavli/kodashim/bekhorot.json",
+    "masechet": "בכורות",
+    "seder": "kodashim",
+    "sefaria_ref": "Bekhorot",
+    "chapters": 119,
+    "halachot": 119
+  },
+  {
+    "json": "source/Bavli/kodashim/arakhin.json",
+    "masechet": "ערכין",
+    "seder": "kodashim",
+    "sefaria_ref": "Arakhin",
+    "chapters": 65,
+    "halachot": 65
+  },
+  {
+    "json": "source/Bavli/kodashim/temurah.json",
+    "masechet": "תמורה",
+    "seder": "kodashim",
+    "sefaria_ref": "Temurah",
+    "chapters": 65,
+    "halachot": 65
+  },
+  {
+    "json": "source/Bavli/kodashim/keritot.json",
+    "masechet": "כריתות",
+    "seder": "kodashim",
+    "sefaria_ref": "Keritot",
+    "chapters": 54,
+    "halachot": 54
+  },
+  {
+    "json": "source/Bavli/kodashim/meilah.json",
+    "masechet": "מעילה",
+    "seder": "kodashim",
+    "sefaria_ref": "Meilah",
+    "chapters": 41,
+    "halachot": 41
+  },
+  {
+    "json": "source/Bavli/kodashim/tamid.json",
+    "masechet": "תמיד",
+    "seder": "kodashim",
+    "sefaria_ref": "Tamid",
+    "chapters": 17,
+    "halachot": 17
+  },
+  {
+    "json": "source/Bavli/taharot/niddah.json",
+    "masechet": "נדה",
+    "seder": "taharot",
+    "sefaria_ref": "Niddah",
+    "chapters": 143,
+    "halachot": 143
+  }
+]

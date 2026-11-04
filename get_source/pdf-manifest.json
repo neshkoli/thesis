@@ -1,0 +1,343 @@
+{
+  "pages": [
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/nashim",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/nashim/",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin/",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/tararot/",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi",
+    "https://www.daat.ac.il/he-il/toshba/yerushalmi/tararot"
+  ],
+  "pdfs": [
+    {
+      "url": "https://daat.ac.il/daat/toshba/yerushalmi/nezikin/yeru-avoda-zara.pdf",
+      "title": "מסכת עבודה זרה,",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin/",
+      "local_path": "pdfs/nezikin/yeru-avoda-zara.pdf",
+      "bytes": 750567,
+      "status": "ok"
+    },
+    {
+      "url": "https://daat.ac.il/daat/toshba/yerushalmi/nezikin/yeru-batra.pdf",
+      "title": "מסכת בבא בתרא",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin/",
+      "local_path": "pdfs/nezikin/yeru-batra.pdf",
+      "bytes": 824737,
+      "status": "ok"
+    },
+    {
+      "url": "https://daat.ac.il/daat/toshba/yerushalmi/nezikin/yeru-horayot.pdf",
+      "title": "מסכת הוריות",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin/",
+      "local_path": "pdfs/nezikin/yeru-horayot.pdf",
+      "bytes": 561750,
+      "status": "ok"
+    },
+    {
+      "url": "https://daat.ac.il/daat/toshba/yerushalmi/nezikin/yeru-kama.pdf",
+      "title": "מסכת בבא קמא",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin/",
+      "local_path": "pdfs/nezikin/yeru-kama.pdf",
+      "bytes": 773765,
+      "status": "ok"
+    },
+    {
+      "url": "https://daat.ac.il/daat/toshba/yerushalmi/nezikin/yeru-makot.pdf",
+      "title": "מסכת מכות",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin/",
+      "local_path": "pdfs/nezikin/yeru-makot.pdf",
+      "bytes": 266301,
+      "status": "ok"
+    },
+    {
+      "url": "https://daat.ac.il/daat/toshba/yerushalmi/nezikin/yeru-metzia.pdf",
+      "title": "מסכת בבא מציעא",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin/",
+      "local_path": "pdfs/nezikin/yeru-metzia.pdf",
+      "bytes": 695346,
+      "status": "ok"
+    },
+    {
+      "url": "https://daat.ac.il/daat/toshba/yerushalmi/nezikin/yeru-sanhedrin.pdf",
+      "title": "מסכת סנהדרין",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin/",
+      "local_path": "pdfs/nezikin/yeru-sanhedrin.pdf",
+      "bytes": 1150914,
+      "status": "ok"
+    },
+    {
+      "url": "https://daat.ac.il/daat/toshba/yerushalmi/nezikin/yeru-shvuot.pdf",
+      "title": "מסכת שבועות",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nezikin/",
+      "local_path": "pdfs/nezikin/yeru-shvuot.pdf",
+      "bytes": 877376,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/hakdama.pdf",
+      "title": "הקדמה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi",
+      "local_path": "pdfs/hakdama.pdf",
+      "bytes": 95476,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-beiza.pdf",
+      "title": "מסכת ביצה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-beiza.pdf",
+      "bytes": 695879,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-chagiga.pdf",
+      "title": "מסכת חגיגה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-chagiga.pdf",
+      "bytes": 686923,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-eruvin.pdf",
+      "title": "מסכת עירובין",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-eruvin.pdf",
+      "bytes": 1871360,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-megila.pdf",
+      "title": "מסכת מגילה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-megila.pdf",
+      "bytes": 971388,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-moed-katan.pdf",
+      "title": "מסכת מועד קטן",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-moed-katan.pdf",
+      "bytes": 590432,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-psachim.pdf",
+      "title": "מסכת פסחים",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-psachim.pdf",
+      "bytes": 2060526,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-rosh-hashana.pdf",
+      "title": "מסכת ראש השנה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-rosh-hashana.pdf",
+      "bytes": 673000,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-shabat.pdf",
+      "title": "מסכת שבת",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-shabat.pdf",
+      "bytes": 2636443,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-shkalim.pdf",
+      "title": "מסכת שקלים",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-shkalim.pdf",
+      "bytes": 2307363,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-suka.pdf",
+      "title": "מסכת סוכה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-suka.pdf",
+      "bytes": 669868,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-taanit.pdf",
+      "title": "מסכת תענית",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-taanit.pdf",
+      "bytes": 797021,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/moed/yeru-yoma.pdf",
+      "title": "מסכת יומא",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/moed/",
+      "local_path": "pdfs/moed/yeru-yoma.pdf",
+      "bytes": 1050551,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/nashim/yeru-gitin.pdf",
+      "title": "מסכת גיטין",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nashim/",
+      "local_path": "pdfs/nashim/yeru-gitin.pdf",
+      "bytes": 1146439,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/nashim/yeru-kidushin.pdf",
+      "title": "מסכת קידושין",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nashim/",
+      "local_path": "pdfs/nashim/yeru-kidushin.pdf",
+      "bytes": 1215542,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/nashim/yeru-ktubot.pdf",
+      "title": "מסכת כתובות",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nashim/",
+      "local_path": "pdfs/nashim/yeru-ktubot.pdf",
+      "bytes": 1483326,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/nashim/yeru-nazir.pdf",
+      "title": "מסכת נזיר",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nashim/",
+      "local_path": "pdfs/nashim/yeru-nazir.pdf",
+      "bytes": 955365,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/nashim/yeru-nedarim.pdf",
+      "title": "מסכת נדרים",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nashim/",
+      "local_path": "pdfs/nashim/yeru-nedarim.pdf",
+      "bytes": 908756,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/nashim/yeru-sota.pdf",
+      "title": "מסכת סוטה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nashim/",
+      "local_path": "pdfs/nashim/yeru-sota.pdf",
+      "bytes": 1117471,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/nashim/yeru-yevamot.pdf",
+      "title": "מסכת יבמות",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/nashim/",
+      "local_path": "pdfs/nashim/yeru-yevamot.pdf",
+      "bytes": 1659719,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/taharot/yeru-nida.pdf",
+      "title": "מסכת נידה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/tararot",
+      "local_path": "pdfs/taharot/yeru-nida.pdf",
+      "bytes": 404939,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-bikurim.pdf",
+      "title": "מסכת ביכורים",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-bikurim.pdf",
+      "bytes": 760402,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-brachot.pdf",
+      "title": "מסכת ברכות",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-brachot.pdf",
+      "bytes": 1842320,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-chala.pdf",
+      "title": "מסכת חלה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-chala.pdf",
+      "bytes": 1030158,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-demai.pdf",
+      "title": "מסכת דמאי",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-demai.pdf",
+      "bytes": 1390017,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-kilayim.pdf",
+      "title": "מסכת כלאים",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-kilayim.pdf",
+      "bytes": 2751844,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-maaser-sheni.pdf",
+      "title": "מסכת מעשר שני",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-maaser-sheni.pdf",
+      "bytes": 1052331,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-maasrot.pdf",
+      "title": "מסכת מעשרות",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-maasrot.pdf",
+      "bytes": 1034132,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-orla.pdf",
+      "title": "מסכת ערלה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-orla.pdf",
+      "bytes": 935103,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-peah.pdf",
+      "title": "מסכת פאה",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-peah.pdf",
+      "bytes": 1197402,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-shviit.pdf",
+      "title": "מסכת שביעית",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-shviit.pdf",
+      "bytes": 1289016,
+      "status": "ok"
+    },
+    {
+      "url": "https://www.daat.ac.il/daat/toshba/yerushalmi/zraim/yeru-trumot.pdf",
+      "title": "מסכת תרומות",
+      "from": "https://www.daat.ac.il/he-il/toshba/yerushalmi/zraim/",
+      "local_path": "pdfs/zraim/yeru-trumot.pdf",
+      "bytes": 1292482,
+      "status": "ok"
+    }
+  ],
+  "download_summary": {
+    "ok": 40,
+    "failed": 0,
+    "total": 40
+  }
+}

@@ -1,0 +1,857 @@
+/* ==========================================================================
+   Patriarchate Taxonomy Research Website - Stylesheet
+   Modern Academic RTL Design System (Assistant + Frank Ruhl Libre)
+   Aligned with Master's Thesis Chapter 8
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Academic Slate & Semantic Tones */
+  --slate-950: #020617;
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --slate-200: #e2e8f0;
+  --slate-100: #f1f5f9;
+  --slate-50: #f8fafc;
+  --white: #ffffff;
+
+  /* Theme Accents */
+  --c-intellectual: #2563eb;       /* כחול עמוק / אינטלקטואלי־תורני */
+  --c-intellectual-bg: #eff6ff;
+  --c-intellectual-border: #bfdbfe;
+
+  --c-institutional: #059669;      /* ירוק אמרלד / מוסדי־חקיקתי */
+  --c-institutional-bg: #ecfdf5;
+  --c-institutional-border: #a7f3d0;
+
+  --c-external: #8b5cf6;           /* סגול־ארגמן / הנהגה חיצונית ושררה */
+  --c-external-bg: #f5f3ff;
+  --c-external-border: #ddd6fe;
+
+  --c-halakhic: #0d9488;          /* טורקיז / אקטיביות הלכתית */
+  --c-halakhic-bg: #f0fdfa;
+  --c-halakhic-border: #99f6e4;
+
+  --c-gold: #d97706;              /* זהב אריסטוקרטי */
+  --c-gold-bg: #fffbeb;
+  --c-gold-border: #fde68a;
+
+  --c-danger: #dc2626;
+
+  /* Typography */
+  --font-ui: "Assistant", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-talmud: "Frank Ruhl Libre", "David Libre", "FrankRuehl", Georgia, serif;
+
+  /* Elevations & Shadows */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-ui);
+  background-color: var(--slate-50);
+  color: var(--slate-900);
+  line-height: 1.6;
+  direction: rtl;
+  text-align: right;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   Header & Banner
+   ========================================================================== */
+
+.site-header {
+  background: linear-gradient(135deg, #090d16 0%, #0f172a 100%);
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-logo-shield {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(217, 119, 6, 0.4);
+  color: var(--white);
+}
+
+.brand-titles h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-titles p {
+  font-size: 0.825rem;
+  color: var(--slate-300);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.header-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.academic-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--slate-200);
+}
+
+.academic-pill.gold {
+  background: rgba(217, 119, 6, 0.15);
+  border-color: rgba(217, 119, 6, 0.35);
+  color: #fde68a;
+}
+
+/* Thesis Context Banner */
+.thesis-subbanner {
+  background: rgba(15, 23, 42, 0.65);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.45rem 1.5rem;
+  font-size: 0.8rem;
+  color: var(--slate-300);
+}
+
+.thesis-subbanner .inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ==========================================================================
+   Navigation Tabs
+   ========================================================================== */
+
+.tabs-nav-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--slate-200);
+  padding: 0 1.5rem;
+  box-shadow: var(--shadow-xs);
+  position: sticky;
+  top: 73px;
+  z-index: 40;
+}
+
+.tabs-nav-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs-nav-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.15rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--slate-600);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.tab-btn:hover {
+  color: var(--slate-900);
+  background-color: var(--slate-50);
+}
+
+.tab-btn.active {
+  color: var(--c-intellectual);
+  border-bottom-color: var(--c-intellectual);
+  background-color: var(--c-intellectual-bg);
+}
+
+.tab-badge {
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-full);
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: var(--slate-100);
+  color: var(--slate-700);
+}
+
+.tab-btn.active .tab-badge {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+/* ==========================================================================
+   Main Content Layout & Panes
+   ========================================================================== */
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  flex: 1;
+  width: 100%;
+}
+
+.tab-pane {
+  display: none;
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   Cards & Component UI
+   ========================================================================== */
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--slate-300);
+}
+
+.card-header {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--slate-200);
+  background: var(--slate-50);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header h2,
+.card-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+/* Executive Proof Cards (Findings) */
+.proof-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 4px solid var(--card-border-color, var(--slate-400));
+  transition: var(--transition);
+}
+
+.proof-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.proof-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.proof-stat {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--slate-900);
+  margin-bottom: 0.25rem;
+}
+
+.proof-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--slate-600);
+  margin-bottom: 0.5rem;
+}
+
+.proof-desc {
+  font-size: 0.825rem;
+  color: var(--slate-500);
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   Tab 1: Methodology Specific Styling
+   ========================================================================== */
+
+.methodology-narrative {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--slate-700);
+}
+
+.methodology-narrative p {
+  margin-bottom: 0.85rem;
+}
+
+.methodology-narrative strong {
+  color: var(--slate-900);
+}
+
+.anchor-box {
+  background: var(--slate-50);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.anchor-box h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.anchor-box p {
+  font-size: 0.85rem;
+  color: var(--slate-600);
+}
+
+.prompt-card {
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.prompt-card-header {
+  padding: 0.75rem 1rem;
+  background: var(--slate-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.prompt-tab-switch {
+  display: inline-flex;
+  border-radius: var(--radius-sm);
+  background: var(--slate-200);
+  padding: 2px;
+}
+
+.prompt-tab-switch button {
+  transition: all 0.15s ease-in-out;
+}
+
+.prompt-tab-switch button.active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.prompt-code-container {
+  max-height: 380px;
+  overflow-y: auto;
+  background: #090d16;
+  color: #e2e8f0;
+  padding: 1.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.825rem;
+  line-height: 1.55;
+  direction: ltr;
+  text-align: left;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ==========================================================================
+   Tab 2: Evidence Viewer Styling
+   ========================================================================== */
+
+/* Patriarch Chip Selection */
+.patriarch-chips-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.chip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-full);
+  background: var(--white);
+  border: 1px solid var(--slate-300);
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--slate-700);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.chip-btn:hover {
+  background: var(--slate-100);
+  border-color: var(--slate-400);
+}
+
+.chip-btn.active {
+  background: var(--slate-900);
+  color: var(--white);
+  border-color: var(--slate-900);
+}
+
+.chip-count {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: var(--radius-full);
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.chip-btn.active .chip-count {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+/* Passage Presentation in Frank Ruhl Libre */
+.passage-text-box {
+  font-family: var(--font-talmud);
+  font-size: 1.35rem;
+  line-height: 1.85;
+  color: #1a202c;
+  background: #fdfbf7;
+  border: 1px solid #ebd9c5;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Keyword & Name Highlighting */
+mark.name-hit {
+  background: #fef08a;
+  color: #713f12;
+  font-weight: 700;
+  padding: 0.05rem 0.25rem;
+  border-radius: 4px;
+}
+
+mark.keyword-institutional {
+  background: #d1fae5;
+  color: #065f46;
+  font-weight: 600;
+  padding: 0.05rem 0.2rem;
+  border-radius: 4px;
+}
+
+mark.keyword-aristocratic {
+  background: #ede9fe;
+  color: #5b21b6;
+  font-weight: 600;
+  padding: 0.05rem 0.2rem;
+  border-radius: 4px;
+}
+
+mark.keyword-political {
+  background: #fed7aa;
+  color: #9a3412;
+  font-weight: 600;
+  padding: 0.05rem 0.2rem;
+  border-radius: 4px;
+}
+
+/* Score Badges */
+.score-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.score-badge.intellectual {
+  background: var(--c-intellectual-bg);
+  border: 1px solid var(--c-intellectual-border);
+  color: var(--c-intellectual);
+}
+
+.score-badge.institutional {
+  background: var(--c-institutional-bg);
+  border: 1px solid var(--c-institutional-border);
+  color: var(--c-institutional);
+}
+
+.score-badge.external {
+  background: var(--c-external-bg);
+  border: 1px solid var(--c-external-border);
+  color: var(--c-external);
+}
+
+.score-badge.halakhic {
+  background: var(--c-halakhic-bg);
+  border: 1px solid var(--c-halakhic-border);
+  color: var(--c-halakhic);
+}
+
+/* Model Reasoning Box */
+.reasoning-box {
+  background: #f8fafc;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--slate-700);
+  border-right: 4px solid var(--c-intellectual);
+}
+
+/* Navigation Pager */
+.pager-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--slate-200);
+}
+
+/* ==========================================================================
+   Tab 3: Tables & Dynamic Charts
+   ========================================================================== */
+
+.chart-wrapper {
+  position: relative;
+  height: 380px;
+  width: 100%;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  background: var(--white);
+}
+
+table.academic-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+table.academic-table th {
+  background: var(--slate-100);
+  color: var(--slate-800);
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--slate-300);
+  white-space: nowrap;
+}
+
+table.academic-table th.sortable-th {
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+
+table.academic-table th.sortable-th:hover {
+  background: var(--slate-200);
+}
+
+.sort-icon {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--slate-400);
+  margin-right: 0.25rem;
+}
+
+table.academic-table th.sorted-asc .sort-icon,
+table.academic-table th.sorted-desc .sort-icon {
+  color: var(--c-intellectual);
+  font-weight: bold;
+}
+
+table.academic-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--slate-200);
+  color: var(--slate-700);
+}
+
+table.academic-table tr:hover td {
+  background: var(--slate-50);
+}
+
+.cell-highlight-intel {
+  font-weight: 700;
+  color: var(--c-intellectual);
+}
+
+.cell-highlight-inst {
+  font-weight: 700;
+  color: var(--c-institutional);
+}
+
+.cell-highlight-ext {
+  font-weight: 700;
+  color: var(--c-external);
+}
+
+/* Comparator Proof Card */
+.comparator-proof-card {
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+.comparator-proof-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--slate-300);
+}
+
+.comparator-proof-card .proof-quote {
+  font-family: var(--font-talmud);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--slate-900);
+  margin-bottom: 0.85rem;
+  background: var(--slate-50);
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border-right: 3px solid var(--slate-300);
+}
+
+/* ==========================================================================
+   Buttons & Utilities
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--slate-900);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--slate-800);
+}
+
+.btn-secondary {
+  background: var(--slate-100);
+  color: var(--slate-700);
+  border-color: var(--slate-300);
+}
+
+.btn-secondary:hover {
+  background: var(--slate-200);
+  color: var(--slate-900);
+}
+
+.btn-sm {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
+}
+
+.btn-icon {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  background: var(--white);
+  border-top: 1px solid var(--slate-200);
+  padding: 1.5rem;
+  color: var(--slate-500);
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  .passage-text-box {
+    font-size: 1.15rem;
+    padding: 1rem;
+  }
+}
+

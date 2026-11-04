@@ -1,0 +1,378 @@
+[
+  {
+    "json": "source/Midrash/halakhah/mekhilta-derabbi-shimon-ben-yochai.json",
+    "masechet": "מכילתא דרבי שמעון בן יוחאי",
+    "category": "halakhah",
+    "sefaria_ref": "Mekhilta DeRabbi Shimon Ben Yochai",
+    "chapters": 25,
+    "halachot": 382
+  },
+  {
+    "json": "source/Midrash/halakhah/mekhilta-derabbi-yishmael.json",
+    "masechet": "מכילתא דרבי ישמעאל",
+    "category": "halakhah",
+    "sefaria_ref": "Mekhilta DeRabbi Yishmael",
+    "chapters": 82,
+    "halachot": 2043
+  },
+  {
+    "json": "source/Midrash/halakhah/sifra.json",
+    "masechet": "ספרא",
+    "category": "halakhah",
+    "sefaria_ref": "Sifra",
+    "chapters": 278,
+    "halachot": 2765
+  },
+  {
+    "json": "source/Midrash/halakhah/sifrei-bamidbar.json",
+    "masechet": "ספרי במדבר",
+    "category": "halakhah",
+    "sefaria_ref": "Sifrei Bamidbar",
+    "chapters": 161,
+    "halachot": 295
+  },
+  {
+    "json": "source/Midrash/halakhah/sifrei-zuta.json",
+    "masechet": "ספרי זוטא",
+    "category": "halakhah",
+    "sefaria_ref": "Sifrei Zuta",
+    "chapters": 17,
+    "halachot": 282
+  },
+  {
+    "json": "source/Midrash/halakhah/sifrei-devarim.json",
+    "masechet": "ספרי דברים",
+    "category": "halakhah",
+    "sefaria_ref": "Sifrei Devarim",
+    "chapters": 357,
+    "halachot": 2340
+  },
+  {
+    "json": "source/Midrash/halakhah/midrash-tannaim-on-deuteronomy.json",
+    "masechet": "מדרש תנאים על ספר דברים",
+    "category": "halakhah",
+    "sefaria_ref": "Midrash Tannaim on Deuteronomy",
+    "chapters": 27,
+    "halachot": 498
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/bereshit-rabbah.json",
+    "masechet": "בראשית רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Bereshit Rabbah",
+    "chapters": 100,
+    "halachot": 1036
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/shemot-rabbah.json",
+    "masechet": "שמות רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Shemot Rabbah",
+    "chapters": 52,
+    "halachot": 464
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/vayikra-rabbah.json",
+    "masechet": "ויקרא רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Vayikra Rabbah",
+    "chapters": 37,
+    "halachot": 330
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/bamidbar-rabbah.json",
+    "masechet": "במדבר רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Bamidbar Rabbah",
+    "chapters": 23,
+    "halachot": 444
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/devarim-rabbah.json",
+    "masechet": "דברים רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Devarim Rabbah",
+    "chapters": 11,
+    "halachot": 160
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/shir-hashirim-rabbah.json",
+    "masechet": "שיר השירים רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Shir HaShirim Rabbah",
+    "chapters": 8,
+    "halachot": 105
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/ruth-rabbah.json",
+    "masechet": "רות רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Ruth Rabbah",
+    "chapters": 9,
+    "halachot": 88
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/esther-rabbah.json",
+    "masechet": "אסתר רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Esther Rabbah",
+    "chapters": 11,
+    "halachot": 136
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/kohelet-rabbah.json",
+    "masechet": "קוהלת רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Kohelet Rabbah",
+    "chapters": 12,
+    "halachot": 193
+  },
+  {
+    "json": "source/Midrash/midrash-rabbah/eikhah-rabbah.json",
+    "masechet": "איכה רבה",
+    "category": "midrash-rabbah",
+    "sefaria_ref": "Eikhah Rabbah",
+    "chapters": 6,
+    "halachot": 186
+  },
+  {
+    "json": "source/Midrash/aggadah/aggadat-bereshit.json",
+    "masechet": "אגדת בראשית",
+    "category": "aggadah",
+    "sefaria_ref": "Aggadat Bereshit",
+    "chapters": 84,
+    "halachot": 222
+  },
+  {
+    "json": "source/Midrash/aggadah/bereshit-rabbati.json",
+    "masechet": "בראשית רבתי",
+    "category": "aggadah",
+    "sefaria_ref": "Bereshit Rabbati",
+    "chapters": 12,
+    "halachot": 632
+  },
+  {
+    "json": "source/Midrash/aggadah/ein-yaakov.json",
+    "masechet": "עין יעקב",
+    "category": "aggadah",
+    "sefaria_ref": "Ein Yaakov",
+    "chapters": 350,
+    "halachot": 3192
+  },
+  {
+    "json": "source/Midrash/aggadah/midrash-aggadah.json",
+    "masechet": "מדרש אגדה",
+    "category": "aggadah",
+    "sefaria_ref": "Midrash Aggadah",
+    "chapters": 169,
+    "halachot": 1914
+  },
+  {
+    "json": "source/Midrash/midrash-lekach-tov/midrash-lekach-tov.json",
+    "masechet": "מדרש לקח טוב",
+    "category": "midrash-lekach-tov",
+    "sefaria_ref": "Midrash Lekach Tov",
+    "chapters": 187,
+    "halachot": 4231
+  },
+  {
+    "json": "source/Midrash/midrash-lekach-tov/midrash-lekach-tov-on-ecclesiastes.json",
+    "masechet": "מדרש לקח טוב על קהלת",
+    "category": "midrash-lekach-tov",
+    "sefaria_ref": "Midrash Lekach Tov on Ecclesiastes",
+    "chapters": 13,
+    "halachot": 219
+  },
+  {
+    "json": "source/Midrash/midrash-lekach-tov/midrash-lekach-tov-on-esther.json",
+    "masechet": "מדרש לקח טוב על אסתר",
+    "category": "midrash-lekach-tov",
+    "sefaria_ref": "Midrash Lekach Tov on Esther",
+    "chapters": 11,
+    "halachot": 133
+  },
+  {
+    "json": "source/Midrash/midrash-lekach-tov/midrash-lekach-tov-on-lamentations.json",
+    "masechet": "מדרש לקח טוב על איכה",
+    "category": "midrash-lekach-tov",
+    "sefaria_ref": "Midrash Lekach Tov on Lamentations",
+    "chapters": 6,
+    "halachot": 154
+  },
+  {
+    "json": "source/Midrash/midrash-lekach-tov/midrash-lekach-tov-on-ruth.json",
+    "masechet": "מדרש לקח טוב על רות",
+    "category": "midrash-lekach-tov",
+    "sefaria_ref": "Midrash Lekach Tov on Ruth",
+    "chapters": 5,
+    "halachot": 88
+  },
+  {
+    "json": "source/Midrash/midrash-lekach-tov/midrash-lekach-tov-on-song-of-songs.json",
+    "masechet": "מדרש לקח טוב על שיר השירים",
+    "category": "midrash-lekach-tov",
+    "sefaria_ref": "Midrash Lekach Tov on Song of Songs",
+    "chapters": 9,
+    "halachot": 118
+  },
+  {
+    "json": "source/Midrash/aggadah/midrash-mishlei.json",
+    "masechet": "מדרש משלי",
+    "category": "aggadah",
+    "sefaria_ref": "Midrash Mishlei",
+    "chapters": 31,
+    "halachot": 140
+  },
+  {
+    "json": "source/Midrash/aggadah/midrash-sekhel-tov.json",
+    "masechet": "מדרש שכל טוב",
+    "category": "aggadah",
+    "sefaria_ref": "Midrash Sekhel Tov",
+    "chapters": 56,
+    "halachot": 1572
+  },
+  {
+    "json": "source/Midrash/aggadah/midrash-shmuel.json",
+    "masechet": "מדרש שמואל",
+    "category": "aggadah",
+    "sefaria_ref": "Midrash Shmuel",
+    "chapters": 32,
+    "halachot": 207
+  },
+  {
+    "json": "source/Midrash/aggadah/midrash-tanchuma.json",
+    "masechet": "מדרש תנחומא",
+    "category": "aggadah",
+    "sefaria_ref": "Midrash Tanchuma",
+    "chapters": 767,
+    "halachot": 2121
+  },
+  {
+    "json": "source/Midrash/aggadah/midrash-tanchuma-buber.json",
+    "masechet": "תנחומא בובר",
+    "category": "aggadah",
+    "sefaria_ref": "Midrash Tanchuma Buber",
+    "chapters": 1042,
+    "halachot": 2086
+  },
+  {
+    "json": "source/Midrash/aggadah/midrash-tehillim.json",
+    "masechet": "מדרש תהילים",
+    "category": "aggadah",
+    "sefaria_ref": "Midrash Tehillim",
+    "chapters": 143,
+    "halachot": 808
+  },
+  {
+    "json": "source/Midrash/aggadah/midrash-yelamdenu-selections-from-yalkut-talmud-torah.json",
+    "masechet": "מדרש ילמדנו מתוך ילקוט תלמוד תורה",
+    "category": "aggadah",
+    "sefaria_ref": "Midrash Yelamdenu, Selections from Yalkut Talmud Torah",
+    "chapters": 190,
+    "halachot": 260
+  },
+  {
+    "json": "source/Midrash/aggadah/mishnat-rabbi-eliezer.json",
+    "masechet": "משנת רבי אליעזר",
+    "category": "aggadah",
+    "sefaria_ref": "Mishnat Rabbi Eliezer",
+    "chapters": 20,
+    "halachot": 589
+  },
+  {
+    "json": "source/Midrash/aggadah/otzar-midrashim.json",
+    "masechet": "אוצר מדרשים",
+    "category": "aggadah",
+    "sefaria_ref": "Otzar Midrashim",
+    "chapters": 508,
+    "halachot": 7465
+  },
+  {
+    "json": "source/Midrash/aggadah/pesikta-derav-kahana.json",
+    "masechet": "פסיקתא דרב כהנא",
+    "category": "aggadah",
+    "sefaria_ref": "Pesikta DeRav Kahana",
+    "chapters": 28,
+    "halachot": 304
+  },
+  {
+    "json": "source/Midrash/aggadah/pesikta-rabbati.json",
+    "masechet": "פסיקתא רבתי",
+    "category": "aggadah",
+    "sefaria_ref": "Pesikta Rabbati",
+    "chapters": 52,
+    "halachot": 80
+  },
+  {
+    "json": "source/Midrash/aggadah/pirkei-derabbi-eliezer.json",
+    "masechet": "פרקי דרבי אליעזר",
+    "category": "aggadah",
+    "sefaria_ref": "Pirkei DeRabbi Eliezer",
+    "chapters": 54,
+    "halachot": 656
+  },
+  {
+    "json": "source/Midrash/seder-olam-rabbah/seder-olam-rabbah.json",
+    "masechet": "סדר עולם רבה",
+    "category": "seder-olam-rabbah",
+    "sefaria_ref": "Seder Olam Rabbah",
+    "chapters": 30,
+    "halachot": 63
+  },
+  {
+    "json": "source/Midrash/aggadah/seder-olam-zutta.json",
+    "masechet": "סדר עולם זוטא",
+    "category": "aggadah",
+    "sefaria_ref": "Seder Olam Zutta",
+    "chapters": 10,
+    "halachot": 10
+  },
+  {
+    "json": "source/Midrash/aggadah/sefer-hayashar-midrash.json",
+    "masechet": "ספר הישר (מדרש)",
+    "category": "aggadah",
+    "sefaria_ref": "Sefer HaYashar (midrash)",
+    "chapters": 19,
+    "halachot": 308
+  },
+  {
+    "json": "source/Midrash/aggadah/sifrei-aggadah-on-esther.json",
+    "masechet": "ספרי דאגדתא על מגילת אסתר",
+    "category": "aggadah",
+    "sefaria_ref": "Sifrei Aggadah on Esther",
+    "chapters": 14,
+    "halachot": 197
+  },
+  {
+    "json": "source/Midrash/aggadah/tanna-debei-eliyahu-rabbah.json",
+    "masechet": "תנא דבי אליהו רבה",
+    "category": "aggadah",
+    "sefaria_ref": "Tanna DeBei Eliyahu Rabbah",
+    "chapters": 31,
+    "halachot": 57
+  },
+  {
+    "json": "source/Midrash/aggadah/tanna-debei-eliyahu-zuta.json",
+    "masechet": "תנא דבי אליהו זוטא",
+    "category": "aggadah",
+    "sefaria_ref": "Tanna DeBei Eliyahu Zuta",
+    "chapters": 20,
+    "halachot": 112
+  },
+  {
+    "json": "source/Midrash/aggadah/yalkut-shimoni-on-nach.json",
+    "masechet": "ילקוט שמעוני על נ\"ך",
+    "category": "aggadah",
+    "sefaria_ref": "Yalkut Shimoni on Nach",
+    "chapters": 1066,
+    "halachot": 5294
+  },
+  {
+    "json": "source/Midrash/aggadah/yalkut-shimoni-on-torah.json",
+    "masechet": "ילקוט שמעוני על התורה",
+    "category": "aggadah",
+    "sefaria_ref": "Yalkut Shimoni on Torah",
+    "chapters": 952,
+    "halachot": 4786
+  }
+]

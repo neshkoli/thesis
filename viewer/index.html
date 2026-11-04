@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>מחקר שושלת הנשיאים | הוכחת התמורות במוסד הנשיאות לאורך הדורות</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <div class="brand-wrap">
+          <div class="brand-badge">מחקר תזה: ספרות חז״ל ומוסד הנשיאות</div>
+          <h1 class="brand">מחקר שושלת הנשיאים: תמורות באופי המנהיגות ומקור הסמכות</h1>
+          <p class="brand-subtitle">
+            הוכחה כמותית ואיכותית לשינוי תפקיד הנשיא: מתיקון תקנות בבית שני (מוסדי), דרך הקנוניזציה הלמדנית (אינטלקטואלי), ועד לאריסטוקרטיזציה ושררה באמוראי ארץ ישראל
+          </p>
+        </div>
+
+        <nav class="nav-tabs" role="tablist" aria-label="תצוגות עיקריות">
+          <button id="tab-btn-findings" class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-findings">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+            </svg>
+            ממצאי המחקר ותרשימי הוכחה
+          </button>
+          <button id="tab-btn-summary" class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-summary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            טבלת סיכום והשוואת דורות
+          </button>
+          <button id="tab-btn-single" class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-single">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            עיון ברשומות וקטעי הוכחה
+          </button>
+        </nav>
+      </header>
+
+      <!-- GLOBAL CONTROLS BAR (Applies across views) -->
+      <section class="card global-controls-card">
+        <div class="controls-row">
+          <!-- Filter 1: Corpus -->
+          <div class="filter-group">
+            <span class="filter-label">קורפוס תלמודי:</span>
+            <div class="segmented-control" id="corpus-filter" role="radiogroup" aria-label="סינון לפי קורפוס">
+              <label class="segmented-option">
+                <input type="radio" name="corpus" value="all" checked />
+                <span>בבלי וירושלמי</span>
+              </label>
+              <label class="segmented-option">
+                <input type="radio" name="corpus" value="Bavli" />
+                <span>בבלי בלבד</span>
+              </label>
+              <label class="segmented-option">
+                <input type="radio" name="corpus" value="Yerushalmi" />
+                <span>ירושלמי בלבד</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Filter 2: Grade Threshold -->
+          <div class="filter-group">
+            <span class="filter-label">סף סמכות נספרת:</span>
+            <div class="segmented-control" id="grade-filter" role="radiogroup" aria-label="סינון לפי סף ציונים">
+              <label class="segmented-option" title="כולל רמזים שוליים (1), נוכחות בינונית (2) ומוקד מרכזי (3)">
+                <input type="radio" name="grade" value="1-2-3" checked />
+                <span>ציונים 1, 2, 3 (הכול)</span>
+              </label>
+              <label class="segmented-option" title="סמכות מובהקת בלבד: נוכחות בינונית (2) ומוקד מרכזי (3)">
+                <input type="radio" name="grade" value="2-3" />
+                <span>2 ו-3 בלבד (מובהק)</span>
+              </label>
+              <label class="segmented-option" title="מוקד בלעדי ומרכזי של הפסקה">
+                <input type="radio" name="grade" value="3" />
+                <span>3 בלבד (מוקד בלעדי)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Filter 3: Metric -->
+          <div class="filter-group">
+            <span class="filter-label">יחידת מידה:</span>
+            <div class="segmented-control" id="metric-filter" role="radiogroup" aria-label="אופן הצגת הערכים בטבלה">
+              <label class="segmented-option" title="חלוקה יחסית של סך כוחות הסמכות (מסתכם ל-100%)">
+                <input type="radio" name="metric" value="percent" checked />
+                <span>יחס באחוזים (%)</span>
+              </label>
+              <label class="segmented-option" title="ציון ממוצע לקטע בודד (0 עד 3)">
+                <input type="radio" name="metric" value="avg" />
+                <span>ממוצע לקטע (0–3)</span>
+              </label>
+              <label class="segmented-option" title="סכום נקודות מצטבר">
+                <input type="radio" name="metric" value="score" />
+                <span>סך ציונים (Σ)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="filter-actions">
+            <button id="export-csv-btn" class="btn btn-secondary" type="button" title="ייצוא הטבלה לקובץ CSV התואם ל-Excel">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              ייצוא CSV
+            </button>
+            <button id="copy-table-btn" class="btn btn-secondary" type="button" title="העתקת תוכן הטבלה להדבקה">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              העתק טבלה
+            </button>
+            <label class="btn btn-primary" for="add-csv-files" title="טעינת קובצי CSV נוספים">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              הוסף קובצי CSV
+            </label>
+            <input id="add-csv-files" type="file" multiple accept=".csv,text/csv" class="visually-hidden" />
+          </div>
+        </div>
+
+        <!-- Sages / Generations selection pills -->
+        <div class="person-selector-row">
+          <span class="person-selector-label">דמויות הנשיאים במחקר (לפי סדר כרונולוגי):</span>
+          <div id="person-chips" class="person-chips"></div>
+        </div>
+      </section>
+
+      <!-- ==============================================================
+           TAB 1: RESEARCH FINDINGS & TREND PROOFS
+           ============================================================== -->
+      <section id="tab-findings" class="tab-content active" role="tabpanel" aria-labelledby="tab-btn-findings">
+        <!-- 4 Key Proof Cards -->
+        <div class="proof-cards-grid" id="proof-cards">
+          <!-- Populated by JavaScript with dynamic calculations -->
+        </div>
+
+        <!-- Generational Evolution Stacked Chart -->
+        <div class="card trends-section">
+          <div class="trends-header">
+            <div>
+              <h2 class="trends-title">התפתחות הרכב הסמכות של מוסד הנשיאות לאורך הדורות</h2>
+              <p class="trends-subtitle">
+                התפלגות יחסית של 4 צירי הסמכות לצד מדד האקטיביות ההלכתית בכל דור – מבית שני ועד לאמוראי ארץ ישראל
+              </p>
+            </div>
+            <div class="chart-legend" id="chart-legend">
+              <span class="legend-item"><span class="legend-dot" style="background: #2563eb"></span> סמכות אינטלקטואלית־תורנית</span>
+              <span class="legend-item"><span class="legend-dot" style="background: #059669"></span> סמכות מוסדית־חקיקתית</span>
+              <span class="legend-item"><span class="legend-dot" style="background: #d97706"></span> סמכות פוליטית־ייצוגית</span>
+              <span class="legend-item"><span class="legend-dot" style="background: #9333ea"></span> מעמד אריסטוקרטי ושררה</span>
+              <span class="legend-item"><span class="legend-dot" style="background: #0891b2"></span> הכרעה אקטיבית (%)</span>
+            </div>
+          </div>
+          <div id="trends-chart" class="trends-chart"></div>
+        </div>
+
+        <!-- Head-to-Head Generation Comparator Tool -->
+        <div class="card comparator-card">
+          <div class="comparator-header">
+            <div>
+              <h2 class="comparator-title">כלי השוואה ראש-בראש: הוכחת השוני בין דורות הנשיאים</h2>
+              <p class="comparator-subtitle">
+                בחרו שתי דמויות להשוואה ישירה של הרכב הסמכות, הפעילות ההלכתית וקטעי הוכחה מנמקים
+              </p>
+            </div>
+            <div class="comparator-selectors">
+              <div class="comparator-select-wrap">
+                <label for="compare-person-a">דמות א׳ (מוקדמת):</label>
+                <select id="compare-person-a" class="custom-select"></select>
+              </div>
+              <span class="vs-badge">מול</span>
+              <div class="comparator-select-wrap">
+                <label for="compare-person-b">דמות ב׳ (מאוחרת):</label>
+                <select id="compare-person-b" class="custom-select"></select>
+              </div>
+            </div>
+          </div>
+
+          <div id="comparator-results" class="comparator-results">
+            <!-- Populated dynamically by app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================================
+           TAB 2: SUMMARY TABLE & COMPARATIVE MATRIX
+           ============================================================== -->
+      <section id="tab-summary" class="tab-content" role="tabpanel" aria-labelledby="tab-btn-summary" hidden>
+        <!-- Summary Meta Stats Bar -->
+        <div class="summary-status-bar" id="summary-status-bar">
+          <span id="summary-stats-text">טוען נתונים...</span>
+          <div class="status-legend">
+            <span class="legend-item"><span class="legend-color legend-high"></span> סמכות דומיננטית (מעל 25%)</span>
+            <span class="legend-item"><span class="legend-color legend-mid"></span> סמכות משמעותית (10%–25%)</span>
+            <span class="legend-item"><span class="legend-color legend-low"></span> סמכות מתונה (1%–10%)</span>
+            <span class="legend-item"><span class="legend-color legend-zero"></span> ללא ציונים (0%)</span>
+          </div>
+        </div>
+
+        <!-- Summary Table Container -->
+        <div class="table-container card">
+          <div class="table-scroll-wrap">
+            <table class="summary-table" id="summary-table">
+              <thead>
+                <!-- Top Grouped Header Row -->
+                <tr class="header-domains">
+                  <th class="sticky-col col-person" rowspan="2">דמות הנשיא</th>
+                  <th class="sticky-col col-gen" rowspan="2">דור ותקופה</th>
+                  <th class="sticky-col col-passages" rowspan="2">קטעים מנותחים</th>
+                  <th class="sticky-col col-score" rowspan="2">סך נקודות סמכות</th>
+                  <th class="th-domain th-domain-axes" colspan="4">
+                    א. ארבעת צירי הסמכות של הנשיא (מתוך classification.md)
+                  </th>
+                  <th class="th-domain th-domain-activity" colspan="1">
+                    ב. אקטיביות הלכתית
+                  </th>
+                </tr>
+                <!-- Sub Header: 5 Columns -->
+                <tr class="header-topics" id="table-topics-header">
+                  <!-- Populated by JavaScript -->
+                </tr>
+              </thead>
+              <tbody id="summary-tbody">
+                <!-- Populated by JavaScript -->
+              </tbody>
+              <tfoot id="summary-tfoot">
+                <!-- Populated by JavaScript -->
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================================
+           TAB 3: SINGLE RECORD & EVIDENCE DRILLDOWN
+           ============================================================== -->
+      <section id="tab-single" class="tab-content" role="tabpanel" aria-labelledby="tab-btn-single" hidden>
+        <!-- Single Viewer Topbar -->
+        <div class="single-topbar card">
+          <div class="single-controls-grid">
+            <div class="file-controls">
+              <label class="sample-label" for="sample-file">בחירת דמות לעיון מפורט:</label>
+              <select id="sample-file" class="custom-select">
+                <option value="">— בחרו דמות —</option>
+              </select>
+              <label class="file-button" for="csv-file">טען קובץ CSV חיצוני</label>
+              <input id="csv-file" type="file" accept=".csv,text/csv" class="visually-hidden" />
+              <span id="file-name" class="file-name">נטען קובץ מובנה</span>
+            </div>
+
+            <!-- Single view axis filter pills -->
+            <div class="single-axis-filters">
+              <span class="axis-filter-label">סינון קטעים לפי ציר סמכות:</span>
+              <div class="axis-pills-wrap" id="single-axis-pills">
+                <button type="button" class="axis-pill active" data-axis="all">כל הקטעים</button>
+                <button type="button" class="axis-pill pill-aristocratic" data-axis="Aristocratic" data-min="2">👑 אריסטוקרטיה ושררה (2-3)</button>
+                <button type="button" class="axis-pill pill-institutional" data-axis="Institutional" data-min="2">🏛️ סמכות מוסדית ותקנות (2-3)</button>
+                <button type="button" class="axis-pill pill-political" data-axis="Political" data-min="1">🌍 שלטון ופוליטיקה (1-3)</button>
+                <button type="button" class="axis-pill pill-intellectual" data-axis="Intellectual" data-min="2">📘 למדנות ופסיקה (2-3)</button>
+                <button type="button" class="axis-pill pill-halakhic" data-axis="Halakhic_Activity" data-min="1">⚖️ פוסק אקטיבי</button>
+              </div>
+            </div>
+
+            <!-- Search and Pager -->
+            <div class="single-nav-row">
+              <div class="search-input-wrap">
+                <input type="text" id="snippet-search" placeholder="חיפוש מילה בקטע או במסכת..." class="snippet-search-input" />
+              </div>
+              <div class="pager">
+                <button id="prev" class="nav-btn" type="button" disabled title="קטע קודם (חץ ימינה)">
+                  הקודם
+                  <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16">
+                    <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </button>
+                <span id="counter" class="counter" aria-live="polite">0 / 0</span>
+                <button id="next" class="nav-btn" type="button" disabled title="קטע הבא (חץ שמאלה)">
+                  הבא
+                  <svg viewBox="0 0 24 24" aria-hidden="true" width="16" height="16">
+                    <path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p id="empty-state" class="empty">
+          בחרו דמות מהרשימה כדי לעבור בין הרשומות המסווגות ולקרוא את נימוקי המודל.
+        </p>
+
+        <!-- Record Card with Evidence Details -->
+        <article id="record" class="card record-card" hidden>
+          <div class="record-header">
+            <div id="meta" class="meta"></div>
+            <div id="scores" class="scores-badges-wrap"></div>
+          </div>
+
+          <div class="snippet-wrap">
+            <div class="snippet-header">
+              <label for="snippet" class="snippet-label">קטע המקור מן התלמוד והפרשנות (שטיינזלץ / מקור):</label>
+              <span id="snippet-source-badge" class="source-badge"></span>
+            </div>
+            <div id="snippet" class="snippet" tabindex="0"></div>
+          </div>
+
+          <!-- Model Reasoning Box (CRUCIAL EVIDENCE) -->
+          <div class="reasoning-card" id="reasoning-card">
+            <div class="reasoning-header">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span class="reasoning-title">נימוק סיווג המודל (על פי הנחיות classification.md):</span>
+            </div>
+            <div id="model-reasoning" class="reasoning-content">
+              לא קיים נימוק לקטע זה.
+            </div>
+          </div>
+        </article>
+
+        <p class="hint">קיצורי מקלדת: חץ שמאלה — הבא, חץ ימינה — הקודם.</p>
+      </section>
+    </main>
+
+    <!-- Global Floating Tooltip for Table Cells -->
+    <div id="cell-tooltip" class="floating-tooltip" hidden></div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

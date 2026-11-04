@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>תמורות בתפקיד הנשיא | אתר מחקר מלווה לתזת מוסמך</title>
+
+  <!-- Google Fonts: Assistant for modern UI + Frank Ruhl Libre for Talmudic text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Local Vendor Bundles (Zero-Dependency) -->
+  <script src="js/lib/lucide.min.js"></script>
+  <script src="js/lib/chart.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       Top Academic Header
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand-section">
+        <div class="brand-logo-shield">
+          <i data-lucide="crown" style="width: 24px; height: 24px;"></i>
+        </div>
+        <div class="brand-titles">
+          <h1>
+            תמורות בתפקיד הנשיא: דפוסי מנהיגות בראי הניתוח הכמותי
+          </h1>
+          <p>
+            <i data-lucide="book-open" style="width: 14px; height: 14px;"></i>
+            אתר מחקר מלווה לתזת מוסמך • טקסונומיה כמותית של מוסד הנשיאות בספרות התלמודית
+          </p>
+        </div>
+      </div>
+
+      <div class="header-badges">
+        <span class="academic-pill gold">
+          <i data-lucide="sparkles" style="width: 13px; height: 13px;"></i>
+          פרק 8 בתזה
+        </span>
+        <span class="academic-pill">
+          <i data-lucide="database" style="width: 13px; height: 13px;"></i>
+          2,200+ מופעים מנותחים
+        </span>
+        <span class="academic-pill">
+          <i data-lucide="cpu" style="width: 13px; height: 13px;"></i>
+          Digital Humanities
+        </span>
+      </div>
+    </div>
+
+    <!-- Thesis Context Sub-banner -->
+    <div class="thesis-subbanner">
+      <div class="inner">
+        <div>
+          <strong>קורפוס המחקר:</strong> תלמוד בבלי (ביאור הרב עדין שטיינזלץ, ספריא) ותלמוד ירושלמי (ביאור הרב מאיר כהן,
+          דעת) • מקטעי 90 מילים
+        </div>
+        <div>
+          <strong>מתודולוגיה:</strong> סיווג תלת-צירי בבינה מלאכותית (Gemini) • Bias-Aware Framework • בדיקת תוקף ידנית
+          (10%)
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Sticky Tabs Navigation Bar
+       ======================================================================== -->
+  <nav class="tabs-nav-bar" aria-label="ניווט בלשוניות האתר">
+    <div class="tabs-nav-inner">
+      <button class="tab-btn active" data-tab="tab-methodology" id="btn-tab-methodology">
+        <i data-lucide="microscope" style="width: 18px; height: 18px;"></i>
+        <span>1. מתודולוגיה, רקע תיאורטי ופרומפטים</span>
+        <span class="tab-badge">סעיפים 8.1–8.3</span>
+      </button>
+
+      <button class="tab-btn" data-tab="tab-viewer" id="btn-tab-viewer">
+        <i data-lucide="file-search" style="width: 18px; height: 18px;"></i>
+        <span>2. עיון במקורות וברשומות ההוכחה</span>
+        <span class="tab-badge" id="viewer-count-badge">2,215 קטעים</span>
+      </button>
+
+      <button class="tab-btn" data-tab="tab-findings" id="btn-tab-findings">
+        <i data-lucide="bar-chart-3" style="width: 18px; height: 18px;"></i>
+        <span>3. ממצאי המחקר, לוחות ותרשימים</span>
+        <span class="tab-badge">גרפים 1–4 ולוחות 8.2 & 8.4</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       Main Content Container
+       ======================================================================== -->
+  <main class="main-container">
+
+    <!-- ====================================================================
+         TAB 1: Methodology, Theoretical Background & Prompts
+         ==================================================================== -->
+    <section class="tab-pane active" id="pane-tab-methodology">
+
+      <!-- Top Overview Card -->
+      <div class="card">
+        <div class="card-header">
+          <h2>
+            <i data-lucide="library" style="width: 20px; height: 20px; color: var(--c-intellectual);"></i>
+            החידוש המתודולוגי: יישום מדעי הרוח הדיגיטליים (Digital Humanities) בחקר הנשיאות
+          </h2>
+          <span class="academic-pill">סעיף 8.1 בתזה</span>
+        </div>
+        <div class="card-body methodology-narrative">
+          <p>
+            עד כה, נשען חקר מוסד הנשיאות בתקופת המשנה והתלמוד בעיקר על כלים של ניתוח היסטורי, טקסטואלי ופילולוגי של
+            אירועים ודמויות. ואולם, כדי להוכיח בצורה מובהקת ואמפירית את הטענה המרכזית של מחקר זה, כי חלו <strong>תמורות
+              משמעותיות בהגדרת תפקיד הנשיא לאורך הדורות</strong> — מתפקיד של הנהגה רוחנית ומשפטית פנימית לתפקיד של הנהגה
+            מדינית, ייצוגית ואריסטוקרטית — עולה הצורך להרחיב את ארגז הכלים המחקרי.
+          </p>
+          <p>
+            בהשראת מחקריו של <strong>פרופ' חיים לפין (Hayim Lapin)</strong> המדגימים שימוש בכלים כמותיים לחקר התפתחות
+            טקסט המשנה, ועבודותיהם של <strong>אבי שמידמן, משה קופל ואלי פורת מפרויקט 'דיקטה' (Dicta)</strong> על למידת
+            מכונה וניתוח אלגוריתמי-סגנוני לסיווג טקסטים קדומים, פותח במחקר זה מדד כמותי של <strong>'טקסונומיה
+              תלמודית'</strong>. כלי זה אסף ומיין את כלל האירועים והציטוטים המיוחסים לשושלת הנשיאים במקורות התלמודיים
+            (הבבלי והירושלמי), ומייצר מדד יחס כמותי המאפשר לבחון הלכה למעשה כיצד השתנה אופי ההנהגה על ציר הזמן.
+          </p>
+        </div>
+      </div>
+
+      <!-- Corpus & Extraction Pipeline Cards -->
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h3>
+              <i data-lucide="layers" style="width: 18px; height: 18px; color: var(--c-institutional);"></i>
+              איסוף הנתונים, מקורות הביאור וחלון הטקסט (סעיף 8.2)
+            </h3>
+          </div>
+          <div class="card-body methodology-narrative">
+            <p>
+              <strong>התמודדות עם שפת המקור הארמית:</strong> סיווג על גבי טקסט מקור ארמי לא הניב תוצאות מדויקות דיין. על
+              כן, החיפוש והסיווג נעשו על גבי טקסטים הכוללים ביאור מלא בעברית:
+            </p>
+            <ul style="padding-right: 1.25rem; margin-bottom: 0.75rem; font-size: 0.9rem;">
+              <li><strong>תלמוד בבלי:</strong> ביאורו של הרב עדין שטיינזלץ (מתוך אתר <em>ספריא</em>).</li>
+              <li><strong>תלמוד ירושלמי:</strong> ביאורו של הרב מאיר כהן (מתוך אתר <em>דעת</em>).</li>
+            </ul>
+            <p>
+              <strong>חלון הטקסט ודה-דופליקציה:</strong> לכל אזכור נשמר מקטע של <strong>כ-90 מילים (15 לפני השם ו-75
+                לאחריו)</strong>. תוצאות שבהן אותה אישיות הופיעה מעל פעם אחת באותו מקטע אוחדו לתוצאה אחת.
+            </p>
+            <p>
+              <strong>בדיקת תוקף ידנית (Validation):</strong> נערכה בדיקת תוקף ידנית על מדגם אקראי של <strong>כ-10%
+                מהטקסטים</strong>, וההנחיות למודל השפה דוייקו עד לקבלת מהימנות גבוהה ועקבית.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3>
+              <i data-lucide="compass" style="width: 18px; height: 18px; color: var(--c-gold);"></i>
+              אלגוריתם עוגנים הקשריים לזיהוי שמות זהים (Contextual Anchors)
+            </h3>
+          </div>
+          <div class="card-body">
+            <p style="font-size: 0.9rem; color: var(--slate-600); margin-bottom: 0.85rem;">
+              ארבעה נשיאים שונים נשאו את השם 'רבן גמליאל'. כדי לפענח שמות גנריים ללא תואר מזהה, יושם אלגוריתם זיהוי
+              הנשען על שלושה ממדי הקשר:
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+              <div class="anchor-box">
+                <h4><i data-lucide="users" style="width: 15px; height: 15px;"></i> 1. רשתות חכמים (Interlocutor
+                  Networks)</h4>
+                <p>זיהוי בני השיח הנלווים לנשיא (למשל, אזכור רבי אליעזר ורבי יהושע מעיד בסבירות גבוהה על רבן גמליאל
+                  דיבנה).</p>
+              </div>
+              <div class="anchor-box">
+                <h4><i data-lucide="map-pin" style="width: 15px; height: 15px;"></i> 2. עוגנים גאוגרפיים (Geographical
+                  Anchors)</h4>
+                <p>קישור האירוע למרכזי הפעילות ההיסטוריים: ירושלים (בית שני), יבנה, אושא, ציפורי וטבריה.</p>
+              </div>
+              <div class="anchor-box">
+                <h4><i data-lucide="git-commit" style="width: 15px; height: 15px;"></i> 3. זיהוי מעביר השמועה מול גיבור
+                  המעשה</h4>
+                <p>הפרדה מוחלטת בין החכם המאוחר המצטט את המעשה (למשל 'אמר רב יהודה אמר רב: מעשה ברבן גמליאל...') לבין
+                  דורו של הנשיא הנזכר.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The 3 Leadership Hats & Corpus Bias -->
+      <div class="card">
+        <div class="card-header">
+          <h3>
+            <i data-lucide="shield-alert" style="width: 18px; height: 18px; color: var(--c-external);"></i>
+            מודל הסיווג: שלושת כובעי המנהיגות והתמודדות עם 'הטיית הקורפוס' (סעיף 8.3)
+          </h3>
+          <span class="academic-pill">Bias-Aware Framework</span>
+        </div>
+        <div class="card-body methodology-narrative">
+          <p>
+            <strong>הטיית הקורפוס (Corpus Bias):</strong> התלמוד, בהיותו יצירה בעלת אופי הלכתי ודידקטי מובהק, נוטה תדיר
+            לעטוף אירועים פוליטיים, חברתיים וכלכליים בשיח הלכתי. כפי שמציינים <strong>ורטיאנן וסאילי (Vartiainen &
+              Saili)</strong>, קורפוס עתיק אינו 'חלון שקוף' למציאות אלא תוצר של שימור וצנזורה אידיאולוגית של אליטה
+            אינטלקטואלית.
+          </p>
+          <p>
+            על פי מודל ה-<strong>Bias-Aware Framework</strong> (זילמה ולוטרה), אין להתייחס להטיה כרעש שיש לנקות, אלא
+            כקטגוריה אנליטית בפני עצמה. הטקסונומיה שפותחה מקלפת את 'המעטפת ההלכתית' לפי שלושה צירי סמכות:
+          </p>
+
+          <div class="grid-3" style="margin-top: 1rem;">
+            <div class="anchor-box" style="border-top: 3px solid var(--c-intellectual);">
+              <h4 style="color: var(--c-intellectual);">📘 1. סמכות אינטלקטואלית־תורנית</h4>
+              <p>הנשיא כחכם המוסר מסורת, דורש דרשות, פוסק הלכה מכוח סברתו ונוטל חלק שוויוני במשא ומתן בבית המדרש.</p>
+            </div>
+            <div class="anchor-box" style="border-top: 3px solid var(--c-institutional);">
+              <h4 style="color: var(--c-institutional);">🏛️ 2. סמכות מוסדית־חקיקתית</h4>
+              <p>הנשיא כראש הסנהדרין והמעצב הפנימי של החברה: התקנת תקנות ('מפני תיקון העולם'), מינוי דיינים וקביעת לוח
+                השנה.</p>
+            </div>
+            <div class="anchor-box" style="border-top: 3px solid var(--c-external);">
+              <h4 style="color: var(--c-external);">👑 3. הנהגה חיצונית־מעמדית</h4>
+              <p>הנשיא כראש האומה מול הרשויות הזרות, וכאיש שררה ובעל הון: מגעים דיפלומטיים, נכסים, כוח פיזי (שכירי חרב),
+                כפייה וגינוני כבוד.</p>
+            </div>
+          </div>
+
+          <div
+            style="margin-top: 1.25rem; padding: 0.85rem; background: var(--slate-100); border-radius: var(--radius-md); font-size: 0.85rem;">
+            <strong>סולם הניקוד הרשמי של התזה (0 עד 1):</strong>
+            כל קטע נותח וקיבל ציון בכל ציר:
+            <span class="score-badge intellectual" style="font-size: 0.75rem; padding: 0.15rem 0.4rem;">0 = לא קיים
+              כלל</span>
+            <span class="score-badge institutional" style="font-size: 0.75rem; padding: 0.15rem 0.4rem;">0.25 = רמז
+              עקיף</span>
+            <span class="score-badge external" style="font-size: 0.75rem; padding: 0.15rem 0.4rem;">0.5 = נוכחות
+              בינונית</span>
+            <span class="score-badge halakhic" style="font-size: 0.75rem; padding: 0.15rem 0.4rem;">1.0 = מוקד
+              הקטע</span>.
+            הנתונים נורמלו למדד יחסי (100%) לנטרול פערי היקף המקורות בין הנשיאים.
+          </div>
+        </div>
+      </div>
+
+      <!-- Prompts Interactive Explorer -->
+      <div class="card">
+        <div class="card-header">
+          <h3>
+            <i data-lucide="terminal" style="width: 18px; height: 18px; color: var(--slate-800);"></i>
+            ארכיטקטורת הפרומפטים של בינת המחקר (LLM Prompts Explorer)
+          </h3>
+          <span class="academic-pill">שקיפות מחקרית מלאה</span>
+        </div>
+        <div class="card-body">
+          <p style="font-size: 0.9rem; color: var(--slate-600); margin-bottom: 1rem;">
+            להלן נוסח הפרומפטים המדויק שנשלח למודל השפה (Gemini) לסיווג הטקסונומי ולזיהוי האישים. באפשרותך ללחוץ על
+            'העתק פרומפט' לשחזור מלא של הניסוי.
+          </p>
+          <div id="prompts-list-container">
+            <!-- Dynamically populated by tab-prompts.js -->
+            <div style="text-align: center; padding: 2rem; color: var(--slate-400);">טוען פרומפטים מחקריים...</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================================
+         TAB 2: Text & Evidence Viewer (Passage Explorer)
+         ==================================================================== -->
+    <section class="tab-pane" id="pane-tab-viewer">
+
+      <!-- Patriarch Selector Chips -->
+      <div class="card" style="margin-bottom: 1rem;">
+        <div class="card-body" style="padding: 0.85rem 1.25rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--slate-700);">בחירת נשיא לעיון במקורות (סדר
+              כרונולוגי קפדני):</span>
+            <label
+              style="font-size: 0.8rem; display: flex; align-items: center; gap: 0.4rem; cursor: pointer; color: var(--slate-600);">
+              <input type="checkbox" id="toggle-supplementary-desiim">
+              <span>הצג קבוצות משלימות (הלל הזקן, ר"ג המאוחר)</span>
+            </label>
+          </div>
+          <div class="patriarch-chips-bar" id="patriarch-chips-container">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Filters & Search Toolbar -->
+      <div class="card" style="margin-bottom: 1rem;">
+        <div class="card-body"
+          style="padding: 0.85rem 1.25rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <!-- Corpus Filter -->
+            <div style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.85rem; font-weight: 600;">
+              <span>קורפוס:</span>
+              <select id="viewer-corpus-select" class="btn btn-secondary btn-sm" style="font-family: inherit;">
+                <option value="all">כל הקורפוס (בבלי + ירושלמי)</option>
+                <option value="Bavli">תלמוד בבלי בלבד</option>
+                <option value="Yerushalmi">תלמוד ירושלמי בלבד</option>
+              </select>
+            </div>
+
+            <!-- Seder Filter -->
+            <div style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.85rem; font-weight: 600;">
+              <span>סדר:</span>
+              <select id="viewer-seder-select" class="btn btn-secondary btn-sm" style="font-family: inherit;">
+                <option value="all">כל הסדרים</option>
+                <option value="zraim">זרעים</option>
+                <option value="moed">מועד</option>
+                <option value="nashim">נשים</option>
+                <option value="nezikin">נזיקין</option>
+                <option value="kodashim">קדשים</option>
+                <option value="taharot">טהרות</option>
+              </select>
+            </div>
+
+            <!-- Authority Axis Filter -->
+            <div style="display: flex; align-items: center; gap: 0.35rem; font-size: 0.85rem; font-weight: 600;">
+              <span>סינון לפי סמכות:</span>
+              <select id="viewer-axis-select" class="btn btn-secondary btn-sm" style="font-family: inherit;">
+                <option value="all">כל הצירים</option>
+                <option value="intellectual">📘 סמכות אינטלקטואלית גבוהה (ציון 2-3)</option>
+                <option value="institutional">🏛️ סמכות מוסדית גבוהה (ציון 2-3)</option>
+                <option value="external">👑 הנהגה חיצונית ושררה (ציון 1-3)</option>
+                <option value="halakhic_active">⚖️ אקטיביות הלכתית בלבד (1)</option>
+                <option value="halakhic_passive">בסביל / רקע בלבד (0)</option>
+              </select>
+            </div>
+
+            <button id="viewer-reset-btn" class="btn btn-secondary btn-sm" title="איפוס כל הסינונים">
+              <i data-lucide="rotate-ccw" style="width: 13px; height: 13px;"></i>
+              <span>איפוס</span>
+            </button>
+          </div>
+
+          <!-- Live Text Search -->
+          <div style="display: flex; align-items: center; gap: 0.5rem; flex: 1; max-width: 320px;">
+            <input type="text" id="viewer-search-input" placeholder="חיפוש חופשי בטקסט, מסכת או נימוק..."
+              style="width: 100%; padding: 0.45rem 0.75rem; border: 1px solid var(--slate-300); border-radius: var(--radius-md); font-family: inherit; font-size: 0.85rem;">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Main Passage Card -->
+      <div class="card" id="passage-main-card">
+        <div class="card-header" style="background: var(--white);">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span class="academic-pill gold" id="passage-corpus-badge">תלמוד בבלי</span>
+            <h3 id="passage-ref-title" style="font-size: 1.15rem; font-weight: 700; color: var(--slate-900);">
+              מסכת עירובין דף מה ע״א
+            </h3>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <a href="#" id="passage-sefaria-link" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              <i data-lucide="external-link" style="width: 13px; height: 13px;"></i>
+              <span>עיון בספריא / מקור</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <!-- Talmudic Passage Text in Frank Ruhl Libre -->
+          <div class="passage-text-box" id="passage-text-display">
+            טוען קטע תלמודי...
+          </div>
+
+          <!-- Dual Scale Scores & Halakhic Activity -->
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;"
+              id="passage-scores-container">
+              <!-- Dynamically populated score badges -->
+            </div>
+
+            <div id="passage-halakhic-badge-container">
+              <!-- Halakhic activity -->
+            </div>
+          </div>
+
+          <!-- Model Reasoning Drawer -->
+          <div class="reasoning-box">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.4rem;">
+              <strong
+                style="font-size: 0.85rem; color: var(--slate-800); display: flex; align-items: center; gap: 0.35rem;">
+                <i data-lucide="brain-circuit" style="width: 15px; height: 15px; color: var(--c-intellectual);"></i>
+                נימוק המודל וסיווג הטקסט (AI Reasoning):
+              </strong>
+              <span style="font-size: 0.75rem; color: var(--slate-500);">Gemini Structured Extraction</span>
+            </div>
+            <p id="passage-reasoning-display" style="font-size: 0.875rem; color: var(--slate-700); line-height: 1.55;">
+              נימוק...
+            </p>
+          </div>
+
+          <!-- Pager & Controls -->
+          <div class="pager-controls">
+            <button class="btn btn-secondary" id="btn-prev-passage">
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              <span>הקטע הקודם</span>
+            </button>
+
+            <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+              <span id="passage-counter-text"
+                style="font-size: 0.875rem; font-weight: 700; color: var(--slate-800);">קטע 1 מתוך 66</span>
+
+              <div style="display: flex; align-items: center; gap: 0.35rem;">
+                <span style="font-size: 0.8rem; color: var(--slate-500);">קפוץ למספר:</span>
+                <input type="number" id="viewer-jump-input" min="1"
+                  style="width: 65px; padding: 0.25rem 0.45rem; border: 1px solid var(--slate-300); border-radius: var(--radius-sm); font-family: inherit; font-size: 0.85rem; text-align: center;">
+                <button id="btn-jump-passage" class="btn btn-secondary btn-sm"
+                  style="padding: 0.25rem 0.5rem;">עבור</button>
+              </div>
+
+              <span style="font-size: 0.75rem; color: var(--slate-400);">(ניווט במקלדת: חצים ימינה/שמאלה)</span>
+            </div>
+
+            <button class="btn btn-secondary" id="btn-next-passage">
+              <span>הקטע הבא</span>
+              <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================================
+         TAB 3: Quantitative Findings, Tables & Dynamic Charts
+         ==================================================================== -->
+    <section class="tab-pane" id="pane-tab-findings">
+
+      <!-- Executive Findings Proof Cards -->
+      <div class="grid-4" id="proof-cards-container" style="margin-bottom: 1.5rem;">
+        <!-- Dynamically populated from SUMMARY_DATA.proof_cards -->
+      </div>
+
+      <!-- Official Thesis Charts Section -->
+      <div class="card">
+        <div class="card-header">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <i data-lucide="trending-up" style="width: 20px; height: 20px; color: var(--c-intellectual);"></i>
+            <h3>ארבעת התרשימים הרשמיים של התזה (סעיף 8.4)</h3>
+          </div>
+
+          <!-- Chart Mode Switcher -->
+          <div style="display: flex; align-items: center; gap: 0.35rem; flex-wrap: wrap;" id="chart-mode-buttons">
+            <button class="btn btn-primary btn-sm active-chart-btn" data-chart="chart-intellectual">גרף 1: סמכות
+              אינטלקטואלית</button>
+            <button class="btn btn-secondary btn-sm" data-chart="chart-institutional">גרף 2: סמכות מוסדית</button>
+            <button class="btn btn-secondary btn-sm" data-chart="chart-external">גרף 3: הנהגה חיצונית ושררה</button>
+            <button class="btn btn-secondary btn-sm" data-chart="chart-periods">גרף 4: שתי התקופות</button>
+            <button class="btn btn-secondary btn-sm" data-chart="chart-stacked">תצוגה משולבת (100% Stacked)</button>
+            <button class="btn btn-secondary btn-sm" data-chart="chart-reversal">היפוך תפקידים (תורה מול שררה)</button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div style="margin-bottom: 0.75rem;">
+            <h4 id="current-chart-title" style="font-size: 1.05rem; font-weight: 700; color: var(--slate-800);">
+              גרף 1: התפלגות הסמכות האינטלקטואלית-תורנית לאורך שושלת הנשיאות
+            </h4>
+            <p id="current-chart-desc" style="font-size: 0.85rem; color: var(--slate-600);">
+              מעקב לאורך שבעת הנשיאים על ציר הסמכות התורנית: שיא בימי רבי (91.7%) וצניחה חדה בתקופת האמוראים (42.8%).
+            </p>
+          </div>
+
+          <div class="chart-wrapper">
+            <canvas id="thesisMainChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Macro Periods Comparison Card -->
+      <div class="card" style="border-right: 4px solid var(--c-gold);">
+        <div class="card-header">
+          <h3>
+            <i data-lucide="git-branch" style="width: 18px; height: 18px; color: var(--c-gold);"></i>
+            קו פרשת המים: השוואת שתי התקופות ההיסטוריות (סעיף 8.4 בתזה)
+          </h3>
+          <span class="academic-pill gold">2,208 קטעים מנותחים</span>
+        </div>
+        <div class="card-body">
+          <div class="grid-2">
+            <div class="anchor-box" style="background: #eff6ff; border-color: #bfdbfe;">
+              <h4 style="color: #1e40af;">
+                <i data-lucide="shield" style="width: 16px; height: 16px;"></i>
+                תקופה א': תקופת ההתבססות והעיצוב (הלל עד רבי יהודה הנשיא)
+              </h4>
+              <p style="font-size: 0.85rem; color: #1e3a8a; margin-bottom: 0.75rem;">
+                2,097 קטעים מנותחים • הנשיא כ'ראשון בין שווים' בתוך עולם החכמים
+              </p>
+              <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                <div
+                  style="flex: 1; background: var(--white); padding: 0.75rem; border-radius: var(--radius-sm); text-align: center;">
+                  <div style="font-size: 1.75rem; font-weight: 800; color: var(--c-intellectual);">92.0%</div>
+                  <div style="font-size: 0.75rem; font-weight: 600; color: var(--slate-600);">הנהגה פנימית (אינטלקטואלית
+                    + מוסדית)</div>
+                </div>
+                <div
+                  style="flex: 1; background: var(--white); padding: 0.75rem; border-radius: var(--radius-sm); text-align: center;">
+                  <div style="font-size: 1.75rem; font-weight: 800; color: var(--slate-400);">8.0%</div>
+                  <div style="font-size: 0.75rem; font-weight: 600; color: var(--slate-600);">הנהגה חיצונית ושררה</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="anchor-box" style="background: #faf5ff; border-color: #e9d5ff;">
+              <h4 style="color: #6b21a8;">
+                <i data-lucide="crown" style="width: 16px; height: 16px;"></i>
+                תקופה ב': תקופת הממלכתיות והפרדת הרשויות (ר"ג ברבי ור"י נשיאה)
+              </h4>
+              <p style="font-size: 0.85rem; color: #581c87; margin-bottom: 0.75rem;">
+                111 קטעים מנותחים • הפרדת רשויות: הנשיא מתרחק מבית המדרש לטובת ייצוג ושררה
+              </p>
+              <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                <div
+                  style="flex: 1; background: var(--white); padding: 0.75rem; border-radius: var(--radius-sm); text-align: center;">
+                  <div style="font-size: 1.75rem; font-weight: 800; color: var(--slate-600);">70.4%</div>
+                  <div style="font-size: 0.75rem; font-weight: 600; color: var(--slate-600);">הנהגה פנימית (צניחה של
+                    21.6%)</div>
+                </div>
+                <div
+                  style="flex: 1; background: var(--white); padding: 0.75rem; border-radius: var(--radius-sm); text-align: center;">
+                  <div style="font-size: 1.75rem; font-weight: 800; color: var(--c-external);">29.6%</div>
+                  <div style="font-size: 0.75rem; font-weight: 600; color: var(--slate-600);">הנהגה חיצונית ושררה (זינוק
+                    כמעט פי 4!)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Official Thesis Tables Toolbar -->
+      <div
+        style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem; background: var(--white); padding: 0.75rem 1.25rem; border: 1px solid var(--slate-200); border-radius: var(--radius-md);">
+        <div style="font-size: 0.85rem; color: var(--slate-600); display: flex; align-items: center; gap: 0.35rem;">
+          <i data-lucide="info" style="width: 15px; height: 15px; color: var(--c-intellectual);"></i>
+          <span>לחץ על כותרות העמודות בלוחות למיון עולה או יורד.</span>
+        </div>
+        <label
+          style="font-size: 0.85rem; display: flex; align-items: center; gap: 0.45rem; cursor: pointer; color: var(--slate-700); font-weight: 600;">
+          <input type="checkbox" id="toggle-tables-supp">
+          <span>הצג קבוצות משלימות בלוחות (הלל הזקן - הערת 4, ר"ג המאוחר)</span>
+        </label>
+      </div>
+
+      <!-- Official Thesis Tables -->
+      <div class="grid-2">
+
+        <!-- Table 8.4: Normalized Findings -->
+        <div class="card">
+          <div class="card-header">
+            <h3>
+              <i data-lucide="table" style="width: 18px; height: 18px; color: var(--c-intellectual);"></i>
+              לוח 8.4: ריכוז התוצאות המנורמלות באחוזים (הטבלה הרשמית בתזה)
+            </h3>
+            <button class="btn btn-secondary btn-sm" id="btn-export-table-8-4">
+              <i data-lucide="download" style="width: 13px; height: 13px;"></i>
+              <span>ייצוא CSV</span>
+            </button>
+          </div>
+          <div class="card-body" style="padding: 0;">
+            <div class="table-responsive">
+              <table class="academic-table" id="table-8-4-display">
+                <thead>
+                  <tr>
+                    <th class="sortable-th" data-col="order" title="לחץ למיון">דור <span class="sort-icon"></span></th>
+                    <th class="sortable-th" data-col="display_name" title="לחץ למיון">דמות הנשיא <span
+                        class="sort-icon"></span></th>
+                    <th class="sortable-th" data-col="intellectual_pct" title="לחץ למיון">אינטלקטואלי <span
+                        class="sort-icon"></span></th>
+                    <th class="sortable-th" data-col="institutional_pct" title="לחץ למיון">מוסדי <span
+                        class="sort-icon"></span></th>
+                    <th class="sortable-th" data-col="external_pct" title="לחץ למיון">הנהגה חיצונית <span
+                        class="sort-icon"></span></th>
+                    <th class="sortable-th" data-col="total_quotes" title="לחץ למיון">סך קטעים <span
+                        class="sort-icon"></span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Dynamically populated from SUMMARY_DATA.thesis_table_8_4 -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table 8.2: Corpus Breakdown -->
+        <div class="card">
+          <div class="card-header">
+            <h3>
+              <i data-lucide="book-marked" style="width: 18px; height: 18px; color: var(--c-institutional);"></i>
+              לוח 8.2: התפלגות המקורות לפי קורפוס (בבלי מול ירושלמי)
+            </h3>
+            <button class="btn btn-secondary btn-sm" id="btn-export-table-8-2">
+              <i data-lucide="download" style="width: 13px; height: 13px;"></i>
+              <span>ייצוא CSV</span>
+            </button>
+          </div>
+          <div class="card-body" style="padding: 0;">
+            <div class="table-responsive">
+              <table class="academic-table" id="table-8-2-display">
+                <thead>
+                  <tr>
+                    <th class="sortable-th" data-col="order" title="לחץ למיון">דמות הנשיא <span
+                        class="sort-icon"></span></th>
+                    <th class="sortable-th" data-col="bavli" title="לחץ למיון">בבלי <span class="sort-icon"></span></th>
+                    <th class="sortable-th" data-col="yerushalmi" title="לחץ למיון">ירושלמי <span
+                        class="sort-icon"></span></th>
+                    <th class="sortable-th" data-col="total" title="לחץ למיון">סה״כ <span class="sort-icon"></span></th>
+                    <th class="sortable-th" data-col="ratio" title="לחץ למיון">יחס בבלי/ירושלמי <span
+                        class="sort-icon"></span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Dynamically populated from SUMMARY_DATA.thesis_table_8_2 -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Head-to-Head Generational Comparator Card -->
+      <div class="card">
+        <div class="card-header">
+          <h3>
+            <i data-lucide="scale" style="width: 18px; height: 18px; color: var(--c-gold);"></i>
+            כלי השוואה ראש-בראש בין שני נשיאים (Generational Comparator)
+          </h3>
+          <span class="academic-pill">ניתוח פערי מנהיגות</span>
+        </div>
+        <div class="card-body">
+          <div
+            style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <label style="font-weight: 700; font-size: 0.9rem;">נשיא א':</label>
+              <select id="comparator-select-a" class="btn btn-secondary" style="font-family: inherit;">
+                <!-- Populated dynamically -->
+              </select>
+            </div>
+
+            <div style="font-weight: 800; color: var(--slate-400); font-size: 1.2rem;">מול</div>
+
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <label style="font-weight: 700; font-size: 0.9rem;">נשיא ב':</label>
+              <select id="comparator-select-b" class="btn btn-secondary" style="font-family: inherit;">
+                <!-- Populated dynamically -->
+              </select>
+            </div>
+          </div>
+
+          <div id="comparator-results-container">
+            <!-- Populated dynamically with delta boxes -->
+          </div>
+
+          <!-- Mini comparison chart -->
+          <div
+            style="margin-top: 1.5rem; background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-md); padding: 1.25rem;">
+            <h4
+              style="font-size: 0.95rem; font-weight: 700; color: var(--slate-800); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.35rem;">
+              <i data-lucide="bar-chart-2" style="width: 16px; height: 16px; color: var(--c-intellectual);"></i>
+              השוואה ויזואלית רב־ממדית
+            </h4>
+            <div style="height: 240px; position: relative;">
+              <canvas id="comparatorMiniChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Textual evidence proof cards for both figures -->
+          <div style="margin-top: 1.5rem;">
+            <h4
+              style="font-size: 0.95rem; font-weight: 700; color: var(--slate-800); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.35rem;">
+              <i data-lucide="file-text" style="width: 16px; height: 16px; color: var(--c-gold);"></i>
+              קטעי הוכחה מייצגים מתוך מאגר המקורות
+            </h4>
+            <div class="grid-2" id="comparator-passages-container">
+              <!-- Dynamically populated with proof cards -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>תמורות בתפקיד הנשיא: דפוסי מנהיגות בראי הניתוח הכמותי</strong> • מחקר מלווה לתזת מוסמך
+      </div>
+      <div>
+        מאגר מקורות: תלמוד בבלי (באדיבות <em>ספריא</em>) ותלמוד ירושלמי (באדיבות <em>דעת</em>) • פריסה עצמאית ל-GitHub
+        Pages
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Coordinator Module -->
+  <script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>

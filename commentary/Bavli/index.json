@@ -1,0 +1,298 @@
+[
+  {
+    "json": "commentary/Bavli/zraim/berakhot.json",
+    "masechet": "ברכות",
+    "seder": "zraim",
+    "sefaria_ref": "Steinsaltz on Berakhot",
+    "chapters": 125,
+    "halachot": 125
+  },
+  {
+    "json": "commentary/Bavli/moed/shabbat.json",
+    "masechet": "שבת",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Shabbat",
+    "chapters": 312,
+    "halachot": 312
+  },
+  {
+    "json": "commentary/Bavli/moed/eruvin.json",
+    "masechet": "עירובין",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Eruvin",
+    "chapters": 207,
+    "halachot": 207
+  },
+  {
+    "json": "commentary/Bavli/moed/pesachim.json",
+    "masechet": "פסחים",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Pesachim",
+    "chapters": 240,
+    "halachot": 240
+  },
+  {
+    "json": "commentary/Bavli/moed/rosh-hashanah.json",
+    "masechet": "ראש השנה",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Rosh Hashanah",
+    "chapters": 67,
+    "halachot": 67
+  },
+  {
+    "json": "commentary/Bavli/moed/yoma.json",
+    "masechet": "יומא",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Yoma",
+    "chapters": 173,
+    "halachot": 173
+  },
+  {
+    "json": "commentary/Bavli/moed/sukkah.json",
+    "masechet": "סוכה",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Sukkah",
+    "chapters": 110,
+    "halachot": 110
+  },
+  {
+    "json": "commentary/Bavli/moed/beitzah.json",
+    "masechet": "ביצה",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Beitzah",
+    "chapters": 78,
+    "halachot": 78
+  },
+  {
+    "json": "commentary/Bavli/moed/taanit.json",
+    "masechet": "תענית",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Taanit",
+    "chapters": 59,
+    "halachot": 59
+  },
+  {
+    "json": "commentary/Bavli/moed/megillah.json",
+    "masechet": "מגילה",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Megillah",
+    "chapters": 61,
+    "halachot": 61
+  },
+  {
+    "json": "commentary/Bavli/moed/moed-katan.json",
+    "masechet": "מועד קטן",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Moed Katan",
+    "chapters": 55,
+    "halachot": 55
+  },
+  {
+    "json": "commentary/Bavli/moed/chagigah.json",
+    "masechet": "חגיגה",
+    "seder": "moed",
+    "sefaria_ref": "Steinsaltz on Chagigah",
+    "chapters": 51,
+    "halachot": 51
+  },
+  {
+    "json": "commentary/Bavli/nashim/yevamot.json",
+    "masechet": "יבמות",
+    "seder": "nashim",
+    "sefaria_ref": "Steinsaltz on Yevamot",
+    "chapters": 242,
+    "halachot": 242
+  },
+  {
+    "json": "commentary/Bavli/nashim/ketubot.json",
+    "masechet": "כתובות",
+    "seder": "nashim",
+    "sefaria_ref": "Steinsaltz on Ketubot",
+    "chapters": 222,
+    "halachot": 222
+  },
+  {
+    "json": "commentary/Bavli/nashim/nedarim.json",
+    "masechet": "נדרים",
+    "seder": "nashim",
+    "sefaria_ref": "Steinsaltz on Nedarim",
+    "chapters": 180,
+    "halachot": 180
+  },
+  {
+    "json": "commentary/Bavli/nashim/nazir.json",
+    "masechet": "נזיר",
+    "seder": "nashim",
+    "sefaria_ref": "Steinsaltz on Nazir",
+    "chapters": 129,
+    "halachot": 129
+  },
+  {
+    "json": "commentary/Bavli/nashim/sotah.json",
+    "masechet": "סוטה",
+    "seder": "nashim",
+    "sefaria_ref": "Steinsaltz on Sotah",
+    "chapters": 96,
+    "halachot": 96
+  },
+  {
+    "json": "commentary/Bavli/nashim/gittin.json",
+    "masechet": "גיטין",
+    "seder": "nashim",
+    "sefaria_ref": "Steinsaltz on Gittin",
+    "chapters": 178,
+    "halachot": 178
+  },
+  {
+    "json": "commentary/Bavli/nashim/kiddushin.json",
+    "masechet": "קידושין",
+    "seder": "nashim",
+    "sefaria_ref": "Steinsaltz on Kiddushin",
+    "chapters": 162,
+    "halachot": 162
+  },
+  {
+    "json": "commentary/Bavli/nezikin/bava-kamma.json",
+    "masechet": "בבא קמא",
+    "seder": "nezikin",
+    "sefaria_ref": "Steinsaltz on Bava Kamma",
+    "chapters": 236,
+    "halachot": 236
+  },
+  {
+    "json": "commentary/Bavli/nezikin/bava-metzia.json",
+    "masechet": "בבא מציעא",
+    "seder": "nezikin",
+    "sefaria_ref": "Steinsaltz on Bava Metzia",
+    "chapters": 235,
+    "halachot": 235
+  },
+  {
+    "json": "commentary/Bavli/nezikin/bava-batra.json",
+    "masechet": "בבא בתרא",
+    "seder": "nezikin",
+    "sefaria_ref": "Steinsaltz on Bava Batra",
+    "chapters": 350,
+    "halachot": 350
+  },
+  {
+    "json": "commentary/Bavli/nezikin/sanhedrin.json",
+    "masechet": "סנהדרין",
+    "seder": "nezikin",
+    "sefaria_ref": "Steinsaltz on Sanhedrin",
+    "chapters": 224,
+    "halachot": 224
+  },
+  {
+    "json": "commentary/Bavli/nezikin/makkot.json",
+    "masechet": "מכות",
+    "seder": "nezikin",
+    "sefaria_ref": "Steinsaltz on Makkot",
+    "chapters": 46,
+    "halachot": 46
+  },
+  {
+    "json": "commentary/Bavli/nezikin/shevuot.json",
+    "masechet": "שבועות",
+    "seder": "nezikin",
+    "sefaria_ref": "Steinsaltz on Shevuot",
+    "chapters": 96,
+    "halachot": 96
+  },
+  {
+    "json": "commentary/Bavli/nezikin/avodah-zarah.json",
+    "masechet": "עבודה זרה",
+    "seder": "nezikin",
+    "sefaria_ref": "Steinsaltz on Avodah Zarah",
+    "chapters": 150,
+    "halachot": 150
+  },
+  {
+    "json": "commentary/Bavli/nezikin/horayot.json",
+    "masechet": "הוריות",
+    "seder": "nezikin",
+    "sefaria_ref": "Steinsaltz on Horayot",
+    "chapters": 25,
+    "halachot": 25
+  },
+  {
+    "json": "commentary/Bavli/kodashim/zevachim.json",
+    "masechet": "זבחים",
+    "seder": "kodashim",
+    "sefaria_ref": "Steinsaltz on Zevachim",
+    "chapters": 238,
+    "halachot": 238
+  },
+  {
+    "json": "commentary/Bavli/kodashim/menachot.json",
+    "masechet": "מנחות",
+    "seder": "kodashim",
+    "sefaria_ref": "Steinsaltz on Menachot",
+    "chapters": 217,
+    "halachot": 217
+  },
+  {
+    "json": "commentary/Bavli/kodashim/chullin.json",
+    "masechet": "חולין",
+    "seder": "kodashim",
+    "sefaria_ref": "Steinsaltz on Chullin",
+    "chapters": 281,
+    "halachot": 281
+  },
+  {
+    "json": "commentary/Bavli/kodashim/bekhorot.json",
+    "masechet": "בכורות",
+    "seder": "kodashim",
+    "sefaria_ref": "Steinsaltz on Bekhorot",
+    "chapters": 119,
+    "halachot": 119
+  },
+  {
+    "json": "commentary/Bavli/kodashim/arakhin.json",
+    "masechet": "ערכין",
+    "seder": "kodashim",
+    "sefaria_ref": "Steinsaltz on Arakhin",
+    "chapters": 65,
+    "halachot": 65
+  },
+  {
+    "json": "commentary/Bavli/kodashim/temurah.json",
+    "masechet": "תמורה",
+    "seder": "kodashim",
+    "sefaria_ref": "Steinsaltz on Temurah",
+    "chapters": 65,
+    "halachot": 65
+  },
+  {
+    "json": "commentary/Bavli/kodashim/keritot.json",
+    "masechet": "כריתות",
+    "seder": "kodashim",
+    "sefaria_ref": "Steinsaltz on Keritot",
+    "chapters": 54,
+    "halachot": 54
+  },
+  {
+    "json": "commentary/Bavli/kodashim/meilah.json",
+    "masechet": "מעילה",
+    "seder": "kodashim",
+    "sefaria_ref": "Steinsaltz on Meilah",
+    "chapters": 41,
+    "halachot": 41
+  },
+  {
+    "json": "commentary/Bavli/kodashim/tamid.json",
+    "masechet": "תמיד",
+    "seder": "kodashim",
+    "sefaria_ref": "Steinsaltz on Tamid",
+    "chapters": 17,
+    "halachot": 17
+  },
+  {
+    "json": "commentary/Bavli/taharot/niddah.json",
+    "masechet": "נדה",
+    "seder": "taharot",
+    "sefaria_ref": "Steinsaltz on Niddah",
+    "chapters": 143,
+    "halachot": 143
+  }
+]

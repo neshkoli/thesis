@@ -233,7 +233,9 @@ function renderCurrentPassage() {
 
   // Corpus Badge
   if (corpusBadge) {
-    corpusBadge.innerText = p.corpus === "Bavli" ? "תלמוד בבלי" : "תלמוד ירושלמי";
+    const isBavli = p.corpus === "Bavli";
+    corpusBadge.innerText = isBavli ? "תלמוד בבלי" : "תלמוד ירושלמי";
+    corpusBadge.className = `academic-pill ${isBavli ? "bavli" : "yerushalmi"}`;
   }
 
   // Ref Title & Seder
@@ -247,8 +249,8 @@ function renderCurrentPassage() {
     const sederHeb = SEDER_NAMES_HEBREW[String(p.seder).toLowerCase()] || "";
     refTitle.innerHTML = `
       <span>מסכת ${p.masechet || ""} • ${loc}</span>
-      ${sederHeb ? `<span class="academic-pill" style="font-size:0.75rem; margin-right:0.5rem; font-weight:normal;">${sederHeb}</span>` : ""}
-      ${p.matched ? `<span class="academic-pill gold" style="font-size:0.75rem; font-weight:normal;">התאמה לשם: ${p.matched}</span>` : ""}
+      ${sederHeb ? `<span class="academic-pill" style="font-size:0.75rem; margin-right:0.5rem; font-weight:600;">${sederHeb}</span>` : ""}
+      ${p.matched ? `<span class="academic-pill gold" style="font-size:0.75rem; font-weight:600;">התאמה לשם: ${p.matched}</span>` : ""}
     `;
   }
 

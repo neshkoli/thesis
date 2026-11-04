@@ -20,25 +20,25 @@
   --white: #ffffff;
 
   /* Theme Accents */
-  --c-intellectual: #2563eb;       /* כחול עמוק / אינטלקטואלי־תורני */
+  --c-intellectual: #1d4ed8;       /* כחול עמוק / אינטלקטואלי־תורני */
   --c-intellectual-bg: #eff6ff;
   --c-intellectual-border: #bfdbfe;
 
-  --c-institutional: #059669;      /* ירוק אמרלד / מוסדי־חקיקתי */
+  --c-institutional: #047857;      /* ירוק אמרלד עמוק / מוסדי־חקיקתי */
   --c-institutional-bg: #ecfdf5;
   --c-institutional-border: #a7f3d0;
 
-  --c-external: #8b5cf6;           /* סגול־ארגמן / הנהגה חיצונית ושררה */
+  --c-external: #6d28d9;           /* סגול־ארגמן עמוק / הנהגה חיצונית ושררה */
   --c-external-bg: #f5f3ff;
   --c-external-border: #ddd6fe;
 
-  --c-halakhic: #0d9488;          /* טורקיז / אקטיביות הלכתית */
+  --c-halakhic: #0f766e;          /* טורקיז עמוק / אקטיביות הלכתית */
   --c-halakhic-bg: #f0fdfa;
   --c-halakhic-border: #99f6e4;
 
-  --c-gold: #d97706;              /* זהב אריסטוקרטי */
-  --c-gold-bg: #fffbeb;
-  --c-gold-border: #fde68a;
+  --c-gold: #b45309;              /* זהב אריסטוקרטי עמוק */
+  --c-gold-bg: #fef3c7;
+  --c-gold-border: #fcd34d;
 
   --c-danger: #dc2626;
 
@@ -160,14 +160,39 @@ body {
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--slate-200);
+  background: var(--slate-100);
+  border: 1px solid var(--slate-300);
+  color: var(--slate-700);
 }
 
 .academic-pill.gold {
-  background: rgba(217, 119, 6, 0.15);
-  border-color: rgba(217, 119, 6, 0.35);
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  color: #92400e;
+}
+
+.academic-pill.bavli {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+}
+
+.academic-pill.yerushalmi {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #047857;
+}
+
+/* Header-specific academic pills (on dark gradient background) */
+.site-header .academic-pill {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f1f5f9;
+}
+
+.site-header .academic-pill.gold {
+  background: rgba(217, 119, 6, 0.25);
+  border-color: rgba(245, 158, 11, 0.4);
   color: #fde68a;
 }
 

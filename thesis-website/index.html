@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>תמורות בתפקיד הנשיא | אתר מחקר מלווה לתזת מוסמך</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
   <!-- Google Fonts: Assistant for modern UI + Frank Ruhl Libre for Talmudic text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,24 +41,9 @@
           </h1>
           <p>
             <i data-lucide="book-open" style="width: 14px; height: 14px;"></i>
-            אתר מחקר מלווה לתזת מוסמך • טקסונומיה כמותית של מוסד הנשיאות בספרות התלמודית
+            אתר מחקר מלווה לתזת מוסמך • נעם אשכולי • טקסונומיה כמותית של מוסד הנשיאות בספרות התלמודית
           </p>
         </div>
-      </div>
-
-      <div class="header-badges">
-        <span class="academic-pill gold">
-          <i data-lucide="sparkles" style="width: 13px; height: 13px;"></i>
-          פרק 8 בתזה
-        </span>
-        <span class="academic-pill">
-          <i data-lucide="database" style="width: 13px; height: 13px;"></i>
-          2,200+ מופעים מנותחים
-        </span>
-        <span class="academic-pill">
-          <i data-lucide="cpu" style="width: 13px; height: 13px;"></i>
-          Digital Humanities
-        </span>
       </div>
     </div>
 
@@ -64,11 +52,7 @@
       <div class="inner">
         <div>
           <strong>קורפוס המחקר:</strong> תלמוד בבלי (ביאור הרב עדין שטיינזלץ, ספריא) ותלמוד ירושלמי (ביאור הרב מאיר כהן,
-          דעת) • מקטעי 90 מילים
-        </div>
-        <div>
-          <strong>מתודולוגיה:</strong> סיווג תלת-צירי בבינה מלאכותית (Gemini) • Bias-Aware Framework • בדיקת תוקף ידנית
-          (10%)
+          דעת)
         </div>
       </div>
     </div>
@@ -80,21 +64,23 @@
   <nav class="tabs-nav-bar" aria-label="ניווט בלשוניות האתר">
     <div class="tabs-nav-inner">
       <button class="tab-btn active" data-tab="tab-methodology" id="btn-tab-methodology">
-        <i data-lucide="microscope" style="width: 18px; height: 18px;"></i>
-        <span>1. מתודולוגיה, רקע תיאורטי ופרומפטים</span>
-        <span class="tab-badge">סעיפים 8.1–8.3</span>
+        <i data-lucide="book-open-check" style="width: 18px; height: 18px;"></i>
+        <span>1. רקע, מתודולוגיה ומודל הסיווג</span>
+      </button>
+
+      <button class="tab-btn" data-tab="tab-prompts" id="btn-tab-prompts">
+        <i data-lucide="terminal" style="width: 18px; height: 18px;"></i>
+        <span>2. מודל ופרומפטים</span>
       </button>
 
       <button class="tab-btn" data-tab="tab-viewer" id="btn-tab-viewer">
         <i data-lucide="file-search" style="width: 18px; height: 18px;"></i>
-        <span>2. עיון במקורות וברשומות ההוכחה</span>
-        <span class="tab-badge" id="viewer-count-badge">2,215 קטעים</span>
+        <span>3. עיון במקורות וברשומות ההוכחה</span>
       </button>
 
       <button class="tab-btn" data-tab="tab-findings" id="btn-tab-findings">
         <i data-lucide="bar-chart-3" style="width: 18px; height: 18px;"></i>
-        <span>3. ממצאי המחקר, לוחות ותרשימים</span>
-        <span class="tab-badge">גרפים 1–4 ולוחות 8.2 & 8.4</span>
+        <span>4. ממצאי המחקר, טבלאות ותרשימים</span>
       </button>
     </div>
   </nav>
@@ -105,173 +91,452 @@
   <main class="main-container">
 
     <!-- ====================================================================
-         TAB 1: Methodology, Theoretical Background & Prompts
+         TAB 1: Research Background, Methodology & Classification Model
          ==================================================================== -->
     <section class="tab-pane active" id="pane-tab-methodology">
 
-      <!-- Top Overview Card -->
+      <!-- Card 1: Thesis Context & Research Background -->
       <div class="card">
         <div class="card-header">
           <h2>
-            <i data-lucide="library" style="width: 20px; height: 20px; color: var(--c-intellectual);"></i>
-            החידוש המתודולוגי: יישום מדעי הרוח הדיגיטליים (Digital Humanities) בחקר הנשיאות
+            <i data-lucide="landmark" style="width: 20px; height: 20px; color: var(--c-intellectual);"></i>
+            רקע על עבודת המחקר: מוסד הנשיאות ותמורות בדפוסי ההנהגה
           </h2>
-          <span class="academic-pill">סעיף 8.1 בתזה</span>
         </div>
         <div class="card-body methodology-narrative">
           <p>
-            עד כה, נשען חקר מוסד הנשיאות בתקופת המשנה והתלמוד בעיקר על כלים של ניתוח היסטורי, טקסטואלי ופילולוגי של
-            אירועים ודמויות. ואולם, כדי להוכיח בצורה מובהקת ואמפירית את הטענה המרכזית של מחקר זה, כי חלו <strong>תמורות
-              משמעותיות בהגדרת תפקיד הנשיא לאורך הדורות</strong> — מתפקיד של הנהגה רוחנית ומשפטית פנימית לתפקיד של הנהגה
-            מדינית, ייצוגית ואריסטוקרטית — עולה הצורך להרחיב את ארגז הכלים המחקרי.
+            מוסד הנשיאות בהנהגת שושלת רבן גמליאל עמד בראש החברה היהודית בארץ ישראל במשך כארבע מאות שנה — משלהי ימי הבית
+            השני (המאה הראשונה לספירה) ועד לסוף תקופת האמוראים (סוף המאה הרביעית). לאורך תקופה זו, שימש הנשיא כמוקד
+            הנהגה מרכזי, אולם דמותו, תפקידו ומקור סמכותו עברו שינויים היסטוריים, מוסדיים ופוליטיים מרחיקי לכת.
           </p>
           <p>
-            בהשראת מחקריו של <strong>פרופ' חיים לפין (Hayim Lapin)</strong> המדגימים שימוש בכלים כמותיים לחקר התפתחות
-            טקסט המשנה, ועבודותיהם של <strong>אבי שמידמן, משה קופל ואלי פורת מפרויקט 'דיקטה' (Dicta)</strong> על למידת
-            מכונה וניתוח אלגוריתמי-סגנוני לסיווג טקסטים קדומים, פותח במחקר זה מדד כמותי של <strong>'טקסונומיה
-              תלמודית'</strong>. כלי זה אסף ומיין את כלל האירועים והציטוטים המיוחסים לשושלת הנשיאים במקורות התלמודיים
-            (הבבלי והירושלמי), ומייצר מדד יחס כמותי המאפשר לבחון הלכה למעשה כיצד השתנה אופי ההנהגה על ציר הזמן.
+            <strong>טענת המחקר המרכזית:</strong> המחקר מוכיח באופן כמותי ואמפירי כי חלו
+            <strong>תמורות משמעותיות בהגדרת תפקיד הנשיא לאורך הדורות</strong>. חלוקת הנתונים מצביעה על תמורה מבנית בין
+            שתי תקופות היסטוריות מרכזיות, אשר קו פרשת המים ביניהן הוא פטירתו וצוואתו של רבי יהודה הנשיא ('רבי'):
           </p>
-        </div>
-      </div>
 
-      <!-- Corpus & Extraction Pipeline Cards -->
-      <div class="grid-2">
-        <div class="card">
-          <div class="card-header">
-            <h3>
-              <i data-lucide="layers" style="width: 18px; height: 18px; color: var(--c-institutional);"></i>
-              איסוף הנתונים, מקורות הביאור וחלון הטקסט (סעיף 8.2)
-            </h3>
-          </div>
-          <div class="card-body methodology-narrative">
-            <p>
-              <strong>התמודדות עם שפת המקור הארמית:</strong> סיווג על גבי טקסט מקור ארמי לא הניב תוצאות מדויקות דיין. על
-              כן, החיפוש והסיווג נעשו על גבי טקסטים הכוללים ביאור מלא בעברית:
-            </p>
-            <ul style="padding-right: 1.25rem; margin-bottom: 0.75rem; font-size: 0.9rem;">
-              <li><strong>תלמוד בבלי:</strong> ביאורו של הרב עדין שטיינזלץ (מתוך אתר <em>ספריא</em>).</li>
-              <li><strong>תלמוד ירושלמי:</strong> ביאורו של הרב מאיר כהן (מתוך אתר <em>דעת</em>).</li>
-            </ul>
-            <p>
-              <strong>חלון הטקסט ודה-דופליקציה:</strong> לכל אזכור נשמר מקטע של <strong>כ-90 מילים (15 לפני השם ו-75
-                לאחריו)</strong>. תוצאות שבהן אותה אישיות הופיעה מעל פעם אחת באותו מקטע אוחדו לתוצאה אחת.
-            </p>
-            <p>
-              <strong>בדיקת תוקף ידנית (Validation):</strong> נערכה בדיקת תוקף ידנית על מדגם אקראי של <strong>כ-10%
-                מהטקסטים</strong>, וההנחיות למודל השפה דוייקו עד לקבלת מהימנות גבוהה ועקבית.
-            </p>
-          </div>
-        </div>
+          <!-- Macro Periods Comparison Grid -->
+          <div class="grid-2" style="margin-top: 1rem; margin-bottom: 0.5rem;">
+            <div class="proof-card" style="border-right-color: var(--c-intellectual);">
+              <div class="proof-card-top">
+                <span class="academic-pill" style="color: var(--c-intellectual); background: #eff6ff;">תקופה א' • הלל עד
+                  רבי</span>
+                <i data-lucide="book-open" style="width: 20px; height: 20px; color: var(--c-intellectual);"></i>
+              </div>
+              <div class="proof-stat" style="color: var(--c-intellectual);">92.0%</div>
+              <div class="proof-subtitle">הנהגה פנימית (סמכות אינטלקטואלית ומוסדית)</div>
+              <div class="proof-desc">
+                <strong>תקופת ההתבססות והעיצוב (2,097 קטעים מנותחים):</strong> הנשיא פועל כ"ראשון בין שווים" (primus
+                inter pares) בבית המדרש — מוסר שמועות, דורש דרשות, נוטל חלק שוויוני במשא ומתן התלמודי ומתקין תקנות
+                ציבוריות לתיקון החברה ('מפני תיקון העולם'). הנהגה חיצונית-מעמדית היוותה <strong>8.0% בלבד</strong> מכלל
+                הפעילות.
+              </div>
+            </div>
 
-        <div class="card">
-          <div class="card-header">
-            <h3>
-              <i data-lucide="compass" style="width: 18px; height: 18px; color: var(--c-gold);"></i>
-              אלגוריתם עוגנים הקשריים לזיהוי שמות זהים (Contextual Anchors)
-            </h3>
-          </div>
-          <div class="card-body">
-            <p style="font-size: 0.9rem; color: var(--slate-600); margin-bottom: 0.85rem;">
-              ארבעה נשיאים שונים נשאו את השם 'רבן גמליאל'. כדי לפענח שמות גנריים ללא תואר מזהה, יושם אלגוריתם זיהוי
-              הנשען על שלושה ממדי הקשר:
-            </p>
-            <div style="display: flex; flex-direction: column; gap: 0.65rem;">
-              <div class="anchor-box">
-                <h4><i data-lucide="users" style="width: 15px; height: 15px;"></i> 1. רשתות חכמים (Interlocutor
-                  Networks)</h4>
-                <p>זיהוי בני השיח הנלווים לנשיא (למשל, אזכור רבי אליעזר ורבי יהושע מעיד בסבירות גבוהה על רבן גמליאל
-                  דיבנה).</p>
+            <div class="proof-card" style="border-right-color: var(--c-external);">
+              <div class="proof-card-top">
+                <span class="academic-pill" style="color: var(--c-external); background: #fef2f2;">תקופה ב' • ר"ג ברבי
+                  ור' יהודה נשיאה</span>
+                <i data-lucide="crown" style="width: 20px; height: 20px; color: var(--c-external);"></i>
               </div>
-              <div class="anchor-box">
-                <h4><i data-lucide="map-pin" style="width: 15px; height: 15px;"></i> 2. עוגנים גאוגרפיים (Geographical
-                  Anchors)</h4>
-                <p>קישור האירוע למרכזי הפעילות ההיסטוריים: ירושלים (בית שני), יבנה, אושא, ציפורי וטבריה.</p>
-              </div>
-              <div class="anchor-box">
-                <h4><i data-lucide="git-commit" style="width: 15px; height: 15px;"></i> 3. זיהוי מעביר השמועה מול גיבור
-                  המעשה</h4>
-                <p>הפרדה מוחלטת בין החכם המאוחר המצטט את המעשה (למשל 'אמר רב יהודה אמר רב: מעשה ברבן גמליאל...') לבין
-                  דורו של הנשיא הנזכר.</p>
+              <div class="proof-stat" style="color: var(--c-external);">29.6%</div>
+              <div class="proof-subtitle">הנהגה חיצונית-מעמדית (זינוק של פי 14.4)</div>
+              <div class="proof-desc">
+                <strong>תקופת הממלכתיות והפרדת הרשויות (111 קטעים מנותחים):</strong> שחיקה בהנהגה התורנית הפנימית (ירידה
+                ל-70.4%) לטובת זינוק בהנהגה מדינית, אריסטוקרטית, גביית מיסים, כוח כפייה פיזי (שומרי ראש גותיים ועבדים)
+                ומגעים דיפלומטיים עם רומא. אצל רבי יהודה נשיאה מגיעה ההנהגה החיצונית לשיא של <strong>34.6%</strong> (פי
+                14.4 מרבי!).
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- The 3 Leadership Hats & Corpus Bias -->
+      <!-- Card 2: Methodological Novelty -->
+      <div class="card">
+        <div class="card-header">
+          <h3>
+            <i data-lucide="sparkles" style="width: 18px; height: 18px; color: var(--c-intellectual);"></i>
+            החידוש המתודולוגי: יישום מדעי הרוח הדיגיטליים (Digital Humanities) בחקר הנשיאות
+          </h3>
+        </div>
+        <div class="card-body methodology-narrative">
+          <p>
+            עד כה, נשען חקר מוסד הנשיאות בתקופת המשנה והתלמוד בעיקר על כלים של ניתוח היסטורי, טקסטואלי ופילולוגי של
+            אירועים ודמויות מבודדות. גישה מסורתית זו, על אף חשיבותה הרבה, נתונה למגבלות של סובייקטיביות ונטייה להסתמך על
+            אנקדוטות מפורסמות (כגון הדחת רבן גמליאל ביבנה או יחסי רבי ואנטונינוס) מבלי לבחון את המכלול השלם של הטקסט.
+          </p>
+          <p>
+            כדי להוכיח בצורה מובהקת, שיטתית ואמפירית את תזת המחקר, פותח במחקר זה כלי כמותי של <strong>'טקסונומיה
+              תלמודית'</strong>. כלי זה נשען על התפתחויות עדכניות במדעי הרוח הדיגיטליים (Digital Humanities) ובינה
+            מלאכותית (LLMs):
+          </p>
+          <p style="margin-top: 0.85rem; margin-bottom: 0;">
+            באמצעות כלי זה, נסרקו ונאספו <strong>מעל 2,200 מקטעים תלמודיים</strong> מכלל התלמוד הבבלי והירושלמי, ונבנה
+            מדד יחס כמותי המאפשר לעקוב במדויק אחר השינוי ביחסי הכוחות בין צירי הסמכות לאורך כל דורות השושלת.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3: Data Collection & Corpus -->
+      <div class="card">
+        <div class="card-header">
+          <h3>
+            <i data-lucide="database" style="width: 18px; height: 18px; color: var(--c-institutional);"></i>
+            איסוף הנתונים, מקורות הביאור והקורפוס התלמודי
+          </h3>
+        </div>
+        <div class="card-body methodology-narrative">
+          <p>
+            <strong>שילוב ביאור עברי מלא להתמודדות עם הארמית:</strong> בדיקות מקדימות הראו כי סיווג אוטומטי ישירות על
+            גבי טקסט המקור הארמי לא הניב תוצאות מדויקות דיין, בשל התחביר הארמי הדחוס ופערי מינוח. על כן, איסוף הנתונים
+            והסיווג נעשו על גבי מהדורות הכוללות ביאור עברי מלא, כאשר פירוש הטקסט מוטמע בסוגריים מרובעים:
+          </p>
+          <ul style="padding-right: 1.25rem; margin-bottom: 0.75rem; font-size: 0.9rem;">
+            <li><strong>תלמוד בבלי:</strong> ביאורו של הרב עדין שטיינזלץ (מתוך אתר <em>ספריא</em>).</li>
+            <li><strong>תלמוד ירושלמי:</strong> ביאורו של הרב מאיר כהן (מתוך אתר <em>דעת</em>).</li>
+          </ul>
+
+          <p>
+            <strong>חלון הטקסט ודה-דופליקציה מובנית:</strong> לכל אזכור של אחד מנשיאי השושלת נשמר מקטע של <strong>כ-90
+              מילים (15 מילים לפני השם ו-75 מילים לאחריו)</strong>. חלון זה נמצא אופטימלי להכלת ההקשר התמטי המלא של
+            הדיון. תוצאות שבהן אותה אישיות הופיעה מעל פעם אחת באותו מקטע אוחדו לתוצאה אחת למניעת ספירה כפולה.
+          </p>
+
+          <!-- Table 8.2 Full Official Corpus Distribution -->
+          <div style="margin-top: 1.25rem;">
+            <h4
+              style="font-size: 0.95rem; font-weight: 700; color: var(--slate-800); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.35rem;">
+              <i data-lucide="table" style="width: 16px; height: 16px; color: var(--c-gold);"></i>
+              טבלה 8.2 בתזה: התפלגות המקורות בקורפוסים (בבלי וירושלמי)
+            </h4>
+            <div class="table-responsive">
+              <table class="academic-table">
+                <thead>
+                  <tr>
+                    <th>דמות הנשיא</th>
+                    <th>תקופה / דור היסטורי</th>
+                    <th>תלמוד בבלי</th>
+                    <th>תלמוד ירושלמי</th>
+                    <th>סה״כ קטעים</th>
+                    <th>מעמד במחקר</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>רבן גמליאל הזקן</strong></td>
+                    <td>דור 1 לתנאים (בית שני)</td>
+                    <td>37</td>
+                    <td>29</td>
+                    <td><strong>66</strong></td>
+                    <td><span class="score-badge intellectual">מחקר מרכזי</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>רשב"ג הראשון</strong></td>
+                    <td>ערב החורבן</td>
+                    <td>13</td>
+                    <td>6</td>
+                    <td><strong>19</strong></td>
+                    <td><span class="score-badge intellectual">מחקר מרכזי</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>רבן גמליאל דיבנה</strong></td>
+                    <td>דור 2 לתנאים (יבנה)</td>
+                    <td>416</td>
+                    <td>142</td>
+                    <td><strong>558</strong></td>
+                    <td><span class="score-badge intellectual">מחקר מרכזי</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>רשב"ג השני</strong></td>
+                    <td>דור 3 לתנאים (אושא)</td>
+                    <td>692</td>
+                    <td>167</td>
+                    <td><strong>859</strong></td>
+                    <td><span class="score-badge intellectual">מחקר מרכזי</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>רבי יהודה הנשיא ('רבי')</strong></td>
+                    <td>דור 4–5 לתנאים (חתימת המשנה)</td>
+                    <td>397</td>
+                    <td>158</td>
+                    <td><strong>555</strong></td>
+                    <td><span class="score-badge intellectual">מחקר מרכזי</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>רבן גמליאל ברבי</strong></td>
+                    <td>דור המעבר לאמוראים</td>
+                    <td>17</td>
+                    <td>11</td>
+                    <td><strong>28</strong></td>
+                    <td><span class="score-badge external">תקופה ב'</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>רבי יהודה נשיאה</strong></td>
+                    <td>דור 1–2 לאמוראים (טבריה)</td>
+                    <td>41</td>
+                    <td>42</td>
+                    <td><strong>83</strong></td>
+                    <td><span class="score-badge external">תקופה ב'</span></td>
+                  </tr>
+                  <tr style="background: var(--slate-100); font-weight: 700;">
+                    <td>סה״כ שבעת נשיאי המחקר המרכזי</td>
+                    <td>שתי התקופות המרכזיות</td>
+                    <td>1,613</td>
+                    <td>555</td>
+                    <td><strong>2,168</strong></td>
+                    <td>מדד כמותי רשמי</td>
+                  </tr>
+                  <tr style="color: var(--slate-500); font-size: 0.85rem;">
+                    <td><em>רבן גמליאל בן רבי יהודה נשיאה</em></td>
+                    <td>שלהי תקופת האמוראים</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>הוחרג (מדגם N=7 נמוך)</td>
+                  </tr>
+                  <tr style="color: var(--slate-500); font-size: 0.85rem;">
+                    <td><em>(הלל הזקן)</em></td>
+                    <td>סוף ימי הבית השני</td>
+                    <td>25</td>
+                    <td>15</td>
+                    <td>40</td>
+                    <td>שיוך לשושלת מוטל בספק</td>
+                  </tr>
+                  <tr style="background: #eff6ff; font-weight: 800; border-top: 2px solid var(--c-intellectual);">
+                    <td>סה״כ כלל המקורות במאגר האתר</td>
+                    <td>בבלי + ירושלמי (מקטעי 90 מילים)</td>
+                    <td>1,640</td>
+                    <td>575</td>
+                    <td><strong>2,215</strong></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Contextual Anchors Sub-section -->
+          <div style="margin-top: 1.5rem;">
+            <h4
+              style="font-size: 0.95rem; font-weight: 700; color: var(--slate-800); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.35rem;">
+              <i data-lucide="compass" style="width: 16px; height: 16px; color: var(--c-gold);"></i>
+              אלגוריתם עוגנים הקשריים לזיהוי שמות זהים (Contextual Disambiguation Anchors)
+            </h4>
+            <p style="font-size: 0.9rem; color: var(--slate-600); margin-bottom: 0.85rem;">
+              ארבעה נשיאים שונים נשאו את השם 'רבן גמליאל', ושני נשיאים נשאו את השם 'רבן שמעון בן גמליאל'. כדי לפענח שמות
+              גנריים אלו ללא תואר מזהה, פותח אלגוריתם זיהוי הנשען על שלושה ממדי הקשר תלמודיים:
+            </p>
+            <div class="grid-3">
+              <div class="anchor-box">
+                <h4><i data-lucide="users" style="width: 15px; height: 15px; color: var(--c-intellectual);"></i> 1.
+                  רשתות חכמים</h4>
+                <p>זיהוי בני השיח הנלווים לנשיא: אזכור רבי אליעזר ורבי יהושע מעיד בוודאות על רבן גמליאל דיבנה; אזכור ר'
+                  מאיר ור' נתן מעיד על רשב"ג מאושא; ואזכור רב ושמואל מעיד על ר"ג ברבי.</p>
+              </div>
+              <div class="anchor-box">
+                <h4><i data-lucide="map-pin" style="width: 15px; height: 15px; color: var(--c-institutional);"></i> 2.
+                  עוגנים גאוגרפיים</h4>
+                <p>קישור האירוע למרכזי הפעילות ההיסטוריים של הנשיאות: ירושלים והמקדש (בית שני), יבנה (לאחר החורבן), אושא
+                  (לאחר גזירות אדריאנוס), ציפורי וטבריה (התקופה האמוראית).</p>
+              </div>
+              <div class="anchor-box">
+                <h4><i data-lucide="git-commit" style="width: 15px; height: 15px; color: var(--c-external);"></i> 3.
+                  מעביר השמועה מול גיבור המעשה</h4>
+                <p>הפרדה מוחלטת בין החכם המאוחר המצטט את המעשה (למשל 'אמר רב יהודה אמר רב: מעשה ברבן גמליאל...') לבין
+                  דורו של הנשיא הנזכר. הזיהוי נקבע בלעדית לפי דור גיבורי המעשה.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Classification Model & Bias-Aware Framework -->
       <div class="card">
         <div class="card-header">
           <h3>
             <i data-lucide="shield-alert" style="width: 18px; height: 18px; color: var(--c-external);"></i>
-            מודל הסיווג: שלושת כובעי המנהיגות והתמודדות עם 'הטיית הקורפוס' (סעיף 8.3)
+            מודל הסיווג: שלושת כובעי המנהיגות והתמודדות עם 'הטיית הקורפוס'
           </h3>
-          <span class="academic-pill">Bias-Aware Framework</span>
         </div>
         <div class="card-body methodology-narrative">
           <p>
-            <strong>הטיית הקורפוס (Corpus Bias):</strong> התלמוד, בהיותו יצירה בעלת אופי הלכתי ודידקטי מובהק, נוטה תדיר
-            לעטוף אירועים פוליטיים, חברתיים וכלכליים בשיח הלכתי. כפי שמציינים <strong>ורטיאנן וסאילי (Vartiainen &
-              Saili)</strong>, קורפוס עתיק אינו 'חלון שקוף' למציאות אלא תוצר של שימור וצנזורה אידיאולוגית של אליטה
-            אינטלקטואלית.
+            <strong>הטיית הקורפוס (Corpus Bias):</strong> התלמוד, בהיותו יצירה בעלת אופי הלכתי ודידקטי מובהק שנערכה על
+            ידי אליטה אינטלקטואלית, נוטה תדיר לעטוף אירועים פוליטיים, חברתיים וכלכליים בשיח תורני. ״קורפוס עתיק אינו
+            'חלון שקוף' למציאות, אלא תוצר של
+            שימור וצנזורה אידיאולוגית״. (Vartiainen & Saili)
           </p>
           <p>
             על פי מודל ה-<strong>Bias-Aware Framework</strong> (זילמה ולוטרה), אין להתייחס להטיה כרעש שיש לנקות, אלא
-            כקטגוריה אנליטית בפני עצמה. הטקסונומיה שפותחה מקלפת את 'המעטפת ההלכתית' לפי שלושה צירי סמכות:
+            כקטגוריה אנליטית בפני עצמה. הטקסונומיה שפותחה מקלפת את 'המעטפת ההלכתית' לפי שלושה צירי סמכות ומנהיגות:
           </p>
 
           <div class="grid-3" style="margin-top: 1rem;">
             <div class="anchor-box" style="border-top: 3px solid var(--c-intellectual);">
               <h4 style="color: var(--c-intellectual);">📘 1. סמכות אינטלקטואלית־תורנית</h4>
-              <p>הנשיא כחכם המוסר מסורת, דורש דרשות, פוסק הלכה מכוח סברתו ונוטל חלק שוויוני במשא ומתן בבית המדרש.</p>
+              <p>הנשיא כחכם המוסר מסורת קדומה, דורש דרשות בציבור, פוסק הלכה מכוח סברתו העצמית ולמדנותו, ונוטל חלק
+                שוויוני במשא ומתן של בית המדרש.</p>
             </div>
             <div class="anchor-box" style="border-top: 3px solid var(--c-institutional);">
               <h4 style="color: var(--c-institutional);">🏛️ 2. סמכות מוסדית־חקיקתית</h4>
-              <p>הנשיא כראש הסנהדרין והמעצב הפנימי של החברה: התקנת תקנות ('מפני תיקון העולם'), מינוי דיינים וקביעת לוח
-                השנה.</p>
+              <p>הנשיא כראש הסנהדרין והמעצב הפנימי של סדרי החברה: התקנת תקנות ציבוריות ('מפני תיקון העולם'), מינוי
+                דיינים ושופטים, קביעת לוח השנה (קידוש החודש ועיבור השנה).</p>
             </div>
             <div class="anchor-box" style="border-top: 3px solid var(--c-external);">
-              <h4 style="color: var(--c-external);">👑 3. הנהגה חיצונית־מעמדית</h4>
-              <p>הנשיא כראש האומה מול הרשויות הזרות, וכאיש שררה ובעל הון: מגעים דיפלומטיים, נכסים, כוח פיזי (שכירי חרב),
-                כפייה וגינוני כבוד.</p>
+              <h4 style="color: var(--c-external);">👑 3. הנהגה חיצונית־מעמדית (שררה ופוליטיקה)</h4>
+              <p>הנשיא כראש האומה מול הרשויות הזרות, וכאיש שררה ובעל הון: מגעים דיפלומטיים עם רומא, אחוזות ונכסים, גביית
+                מיסים, כוח פיזי (שומרי ראש גותיים ועבדים), כפייה וגינוני כבוד ומלכות.</p>
             </div>
           </div>
 
           <div
-            style="margin-top: 1.25rem; padding: 0.85rem; background: var(--slate-100); border-radius: var(--radius-md); font-size: 0.85rem;">
-            <strong>סולם הניקוד הרשמי של התזה (0 עד 1):</strong>
-            כל קטע נותח וקיבל ציון בכל ציר:
-            <span class="score-badge intellectual" style="font-size: 0.75rem; padding: 0.15rem 0.4rem;">0 = לא קיים
+            style="margin-top: 1.25rem; padding: 0.85rem 1.15rem; background: var(--slate-100); border-radius: var(--radius-md); font-size: 0.85rem;">
+            <strong>סולם הניקוד הרשמי של התזה:</strong>
+            כל קטע נותח והוענק לו ציון בכל אחד משלושת הצירים:
+            <span class="score-badge intellectual" style="font-size: 0.75rem; padding: 0.15rem 0.45rem;">0 = לא קיים
               כלל</span>
-            <span class="score-badge institutional" style="font-size: 0.75rem; padding: 0.15rem 0.4rem;">0.25 = רמז
+            <span class="score-badge institutional" style="font-size: 0.75rem; padding: 0.15rem 0.45rem;">0.25 = רמז
               עקיף</span>
-            <span class="score-badge external" style="font-size: 0.75rem; padding: 0.15rem 0.4rem;">0.5 = נוכחות
+            <span class="score-badge external" style="font-size: 0.75rem; padding: 0.15rem 0.45rem;">0.5 = נוכחות
               בינונית</span>
-            <span class="score-badge halakhic" style="font-size: 0.75rem; padding: 0.15rem 0.4rem;">1.0 = מוקד
+            <span class="score-badge halakhic" style="font-size: 0.75rem; padding: 0.15rem 0.45rem;">1.0 = מוקד
               הקטע</span>.
-            הנתונים נורמלו למדד יחסי (100%) לנטרול פערי היקף המקורות בין הנשיאים.
+            הציונים נורמלו למדד יחסי (100%) כדי לנטרל את פערי נפח הציטוטים הגולמיים בין הנשיאים (כגון 859 קטעים לרשב"ג
+            השני לעומת 19 לרשב"ג הראשון).
+          </div>
+
+          <!-- Quality Control Box inside Methodology -->
+          <div
+            style="margin-top: 1.25rem; padding: 1rem; background: #f8fafc; border: 1px solid var(--slate-200); border-radius: var(--radius-md);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+              <strong
+                style="color: var(--slate-800); font-size: 0.9rem; display: flex; align-items: center; gap: 0.35rem;">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px; color: var(--c-institutional);"></i>
+                בקרת איכות ותיקוף מדעי (10% מדגם ידני)
+              </strong>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--slate-600); margin-bottom: 0;">
+              לשם הבטחת מהימנות הממצאים, נערכה בדיקת תוקף ידנית עיוורת על מדגם אקראי של <strong>כ-10% מכלל הטקסטים (220+
+                קטעים)</strong> שנבדקו באופן ידני מול פלטי המודל. הפערים נותחו וההנחיות לפרומפט שויפו עד לקבלת
+              התאמה טובה.
+            </p>
           </div>
         </div>
       </div>
 
-      <!-- Prompts Interactive Explorer -->
+    </section>
+
+
+    <!-- ====================================================================
+         TAB 2: Model Prompts Explorer
+         ==================================================================== -->
+    <section class="tab-pane" id="pane-tab-prompts">
+
+      <!-- Prompts Interactive Explorer Card -->
       <div class="card">
         <div class="card-header">
-          <h3>
-            <i data-lucide="terminal" style="width: 18px; height: 18px; color: var(--slate-800);"></i>
-            ארכיטקטורת הפרומפטים של בינת המחקר (LLM Prompts Explorer)
-          </h3>
-          <span class="academic-pill">שקיפות מחקרית מלאה</span>
+          <h2>
+            <i data-lucide="terminal" style="width: 20px; height: 20px; color: var(--slate-800);"></i>
+            פרומפטים ומודל הסיווג (LLM Prompts Explorer)
+          </h2>
         </div>
         <div class="card-body">
-          <p style="font-size: 0.9rem; color: var(--slate-600); margin-bottom: 1rem;">
-            להלן נוסח הפרומפטים המדויק שנשלח למודל השפה (Gemini) לסיווג הטקסונומי ולזיהוי האישים. באפשרותך ללחוץ על
-            'העתק פרומפט' לשחזור מלא של הניסוי.
+          <p style="font-size: 0.95rem; color: var(--slate-700); margin-bottom: 1.25rem; line-height: 1.6;">
+            להלן נוסח הפרומפטים המדויק שנשלח למודל השפה (Google Gemini) לסיווג הטקסונומי ולזיהוי האישים. באפשרותך לעבור בין
+            <strong>ניתוח והנחיות</strong> לבין <strong>נוסח מלא (Markdown)</strong>, או ללחוץ על <strong>'העתק נוסח'</strong> לשחזור עצמאי ומדויק של המחקר.
           </p>
           <div id="prompts-list-container">
             <!-- Dynamically populated by tab-prompts.js -->
             <div style="text-align: center; padding: 2rem; color: var(--slate-400);">טוען פרומפטים מחקריים...</div>
           </div>
+        </div>
+      </div>
+
+      <!-- Structured JSON Schemas Card -->
+      <div class="card" style="border-right: 4px solid var(--c-intellectual);">
+        <div class="card-header">
+          <h3>
+            <i data-lucide="code" style="width: 18px; height: 18px; color: var(--c-intellectual);"></i>
+            ארכיטקטורת סכמת הפלט (Structured Output JSON Schemas)
+          </h3>
+          <span class="academic-pill">אכיפת פלט חוקי</span>
+        </div>
+        <div class="card-body methodology-narrative">
+          <p>
+            כדי למנוע הזיות מילוליות ולהבטיח שכל תוצאה תיקלט באופן מיידי ואמין במאגר המחקר, הוגדרה סכמת JSON קשיחה
+            שנאכפה ישירות בפנייה ל-API של מודל השפה:
+          </p>
+          <div class="grid-2" style="margin-top: 0.75rem;">
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--slate-800); margin-bottom: 0.35rem;">
+                סכמת סיווג טקסונומי (Taxonomy Classification JSON):
+              </div>
+              <pre class="prompt-code-container" style="max-height: 250px;"><code>{
+  "Authority_Axes": {
+    "Intellectual": 0,    // 0 = לא קיים, 0.25 = רמז עקיף, 0.5 = בינוני, 1.0 = מוקד הקטע
+    "Institutional": 0,   // סמכות מוסדית-חקיקתית (תקנות, דיינים, עיבור)
+    "Political": 0,       // מגעים דיפלומטיים מול רומא והעולם החיצון
+    "Aristocratic": 0     // הון, כוח פיזי, עבדים, שררה וגינוני כבוד
+  },
+  "Halakhic_Activity": 1, // 1 = פוסק/מלמד אקטיבי, 0 = נוכח פסיבי, null = ללא הקשר הלכתי
+  "Reasoning": "משפט נימוק קצר המבאר את הציונים שניתנו על בסיס הטקסט."
+}</code></pre>
+            </div>
+
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--slate-800); margin-bottom: 0.35rem;">
+                סכמת זיהוי אישים (Disambiguation JSON):
+              </div>
+              <pre class="prompt-code-container" style="max-height: 250px;"><code>{
+  "Identified_Figure": "הזקן / דיבנה / בר רבי / מאוחר / ספק",
+  "Confidence_Level": "High / Medium / Low",
+  "Key_Anchors": [
+    "מילות מפתח ושמות בני השיח שהובילו לזיהוי הוודאי"
+  ],
+  "Reasoning": "משפט נימוק המבאר מדוע העוגנים מצביעים על אישיות זו."
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scientific Validation & Reproducibility Card -->
+      <div class="card" id="reproducibility-validation-card" style="border-right: 4px solid var(--c-gold);">
+        <div class="card-header">
+          <h3>
+            <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: var(--c-gold);"></i>
+            בקרת איכות, כיול ותיקוף שחזוריות (Scientific Validation & Reproducibility)
+          </h3>
+        </div>
+        <div class="card-body methodology-narrative">
+          <div class="grid-3" style="margin-bottom: 1rem;">
+            <div class="anchor-box">
+              <h4><i data-lucide="clipboard-check"
+                  style="width: 15px; height: 15px; color: var(--c-institutional);"></i> מדגם ידני אקראי (10%)</h4>
+              <p>כ-220 קטעים נדגמו באקראי ונבדקו ע״י חוקר אנושי לבחינת תאימות הסיווג לטקסט המקורי. הפערים נותחו וההנחיות
+                לפרומפט שויפו בהתאם.</p>
+            </div>
+
+            <div class="anchor-box">
+              <h4><i data-lucide="sliders" style="width: 15px; height: 15px; color: var(--c-intellectual);"></i> הגדרות
+                דטרמיניסטיות</h4>
+              <p>הפקת התוצאות במודל נעשתה תחת סכמת JSON קשיחה (Structured Outputs) וטמפרטורה נמוכה למזעור הזיות
+                (Hallucinations) והבטחת שחזוריות.</p>
+            </div>
+
+            <div class="anchor-box">
+              <h4><i data-lucide="git-merge" style="width: 15px; height: 15px; color: var(--c-external);"></i> שילוב
+                איכותני-כמותי</h4>
+              <p>הכלי הכמותי אינו תחליף לעין החוקר, אלא משמש כ'עוזר מחקר דיגיטלי' המאפשר מיפוי שיטתי, אחיד ונטול הטיות
+                של קורפוס עתיר היקף.</p>
+            </div>
+          </div>
+
+          <p style="font-size: 0.85rem; color: var(--slate-600); margin-bottom: 0;">
+            לעיון בכלל הרשומות, הניקוד המפורט ומשפטי הנימוק של כל קטע תלמודי, עבור ללשונית
+            <a href="#viewer" style="color: var(--c-intellectual); font-weight: 700; text-decoration: underline;">3.
+              עיון במקורות וברשומות ההוכחה</a>.
+          </p>
         </div>
       </div>
 
@@ -495,7 +760,7 @@
         <div class="card-header">
           <h3>
             <i data-lucide="git-branch" style="width: 18px; height: 18px; color: var(--c-gold);"></i>
-            קו פרשת המים: השוואת שתי התקופות ההיסטוריות (סעיף 8.4 בתזה)
+            קו פרשת המים: השוואת שתי התקופות ההיסטוריות
           </h3>
           <span class="academic-pill gold">2,208 קטעים מנותחים</span>
         </div>
@@ -556,12 +821,12 @@
         style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 0.5rem; background: var(--white); padding: 0.75rem 1.25rem; border: 1px solid var(--slate-200); border-radius: var(--radius-md);">
         <div style="font-size: 0.85rem; color: var(--slate-600); display: flex; align-items: center; gap: 0.35rem;">
           <i data-lucide="info" style="width: 15px; height: 15px; color: var(--c-intellectual);"></i>
-          <span>לחץ על כותרות העמודות בלוחות למיון עולה או יורד.</span>
+          <span>לחץ על כותרות העמודות בטבלאות למיון עולה או יורד.</span>
         </div>
         <label
           style="font-size: 0.85rem; display: flex; align-items: center; gap: 0.45rem; cursor: pointer; color: var(--slate-700); font-weight: 600;">
           <input type="checkbox" id="toggle-tables-supp">
-          <span>הצג קבוצות משלימות בלוחות (הלל הזקן - הערת 4, ר"ג המאוחר)</span>
+          <span>הצג קבוצות משלימות בטבלאות (הלל הזקן - הערת 4, ר"ג המאוחר)</span>
         </label>
       </div>
 
@@ -573,7 +838,7 @@
           <div class="card-header">
             <h3>
               <i data-lucide="table" style="width: 18px; height: 18px; color: var(--c-intellectual);"></i>
-              לוח 8.4: ריכוז התוצאות המנורמלות באחוזים (הטבלה הרשמית בתזה)
+              טבלה 8.4: ריכוז התוצאות המנורמלות באחוזים (הטבלה הרשמית בתזה)
             </h3>
             <button class="btn btn-secondary btn-sm" id="btn-export-table-8-4">
               <i data-lucide="download" style="width: 13px; height: 13px;"></i>
@@ -611,7 +876,7 @@
           <div class="card-header">
             <h3>
               <i data-lucide="book-marked" style="width: 18px; height: 18px; color: var(--c-institutional);"></i>
-              לוח 8.2: התפלגות המקורות לפי קורפוס (בבלי מול ירושלמי)
+              טבלה 8.2: התפלגות המקורות לפי קורפוס (בבלי מול ירושלמי)
             </h3>
             <button class="btn btn-secondary btn-sm" id="btn-export-table-8-2">
               <i data-lucide="download" style="width: 13px; height: 13px;"></i>
@@ -688,18 +953,6 @@
               <canvas id="comparatorMiniChart"></canvas>
             </div>
           </div>
-
-          <!-- Textual evidence proof cards for both figures -->
-          <div style="margin-top: 1.5rem;">
-            <h4
-              style="font-size: 0.95rem; font-weight: 700; color: var(--slate-800); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.35rem;">
-              <i data-lucide="file-text" style="width: 16px; height: 16px; color: var(--c-gold);"></i>
-              קטעי הוכחה מייצגים מתוך מאגר המקורות
-            </h4>
-            <div class="grid-2" id="comparator-passages-container">
-              <!-- Dynamically populated with proof cards -->
-            </div>
-          </div>
         </div>
       </div>
 
@@ -716,8 +969,7 @@
         <strong>תמורות בתפקיד הנשיא: דפוסי מנהיגות בראי הניתוח הכמותי</strong> • מחקר מלווה לתזת מוסמך
       </div>
       <div>
-        מאגר מקורות: תלמוד בבלי (באדיבות <em>ספריא</em>) ותלמוד ירושלמי (באדיבות <em>דעת</em>) • פריסה עצמאית ל-GitHub
-        Pages
+        מאגר מקורות: תלמוד בבלי (מתוך אתר <em>ספריא</em>) ותלמוד ירושלמי (מתוך אתר <em>דעת</em>)
       </div>
     </div>
   </footer>

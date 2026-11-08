@@ -1,0 +1,11 @@
+{
+  "name": "thesis-website",
+  "version": "1.0.0",
+  "description": "אתר מחקר מלווה לתזת מוסמך: תמורות בתפקיד הנשיא",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000",
+    "bundle": "python3 bundle_data.py",
+    "verify": "python3 verify_phase1.py"
+  }
+}

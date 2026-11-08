@@ -1,4 +1,4 @@
-// Tab 1: Methodology, Theoretical Background & Prompts Explorer
+// Tab 2: Architecture, Model & Prompts Explorer
 // Implements Phase 3 of the Patriarchate Taxonomy Research Website
 
 import { PROMPTS_DATA } from "../data/prompts_data.js";
@@ -8,12 +8,12 @@ const PROMPT_ANNOTATIONS = {
   "prompt-taxonomy": {
     objective: "סיווג טקסונומי של תחומי הפעלת הכוח של הנשיא ורמת האקטיביות ההלכתית",
     scale_explanation: `
-      <strong>סולם הניקוד המדורג (0–3 בפרומפט שהומר ל-0, 0.25, 0.5, 1.0 בתזה):</strong>
+      <strong>סולם הניקוד של התזה:</strong>
       <ul style="padding-right: 1.25rem; margin-top: 0.35rem; font-size: 0.85rem;">
-        <li><code>0</code> (לא קיים כלל בתזה): אין בטקסט כל עדות או רמז לסמכות זו.</li>
-        <li><code>1</code> (0.25 בתזה): רמז עקיף, משני או שולי בלבד.</li>
-        <li><code>2</code> (0.5 בתזה): נוכחות בינונית וברורה בהקשר האירוע.</li>
-        <li><code>3</code> (1.0 בתזה): זהו מוקד הקטע ועיקר הפעולה המתוארת של הנשיא.</li>
+        <li><code>0</code>: לא קיים כלל — אין בטקסט כל עדות או רמז לסמכות זו.</li>
+        <li><code>0.25</code>: רמז עקיף — ביטוי משני או שולי בלבד.</li>
+        <li><code>0.5</code>: נוכחות בינונית — סמכות ברורה וניכרת בהקשר האירוע.</li>
+        <li><code>1.0</code>: מוקד הקטע — זהו עיקר הפעולה המתוארת של הנשיא.</li>
       </ul>
     `,
     rules: [
@@ -80,9 +80,7 @@ const PROMPT_ANNOTATIONS = {
 };
 
 export function initTabPrompts() {
-  renderPipelineCard();
   renderPromptsList();
-  renderValidationCard();
 }
 
 function renderPipelineCard() {
@@ -136,7 +134,7 @@ function renderPipelineCard() {
       </div>
 
       <div style="background: var(--slate-50); padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--slate-200); font-size: 0.85rem; color: var(--slate-700);">
-        <strong>שקיפות הנתונים:</strong> כלל המקורות המנותחים, הנימוקים שנפלטו מהמודל, וציוני הסמכות פתוחים לעיון פרטני בלשונית <em>'2. עיון במקורות וברשומות ההוכחה'</em>.
+        <strong>שקיפות הנתונים:</strong> כלל המקורות המנותחים, הנימוקים שנפלטו מהמודל, וציוני הסמכות פתוחים לעיון פרטני בלשונית <em>'3. עיון במקורות וברשומות ההוכחה'</em>.
       </div>
     </div>
   `;
@@ -293,7 +291,6 @@ function renderValidationCard() {
         <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: var(--c-intellectual);"></i>
         בקרת איכות ותיקוף מדעי (Scientific Validation & Reproducibility)
       </h3>
-      <span class="academic-pill">מהימנות 95%+</span>
     </div>
     <div class="card-body methodology-narrative">
       <div class="grid-3" style="margin-bottom: 1rem;">
@@ -317,7 +314,7 @@ function renderValidationCard() {
 
       <p style="font-size: 0.85rem; color: var(--slate-600); margin-bottom: 0;">
         לעיון בכלל הרשומות, הניקוד המפורט ומשפטי הנימוק של כל קטע תלמודי, עבור ללשונית 
-        <a href="#viewer" style="color: var(--c-intellectual); font-weight: 700; text-decoration: underline;">2. עיון במקורות וברשומות ההוכחה</a>.
+        <a href="#viewer" style="color: var(--c-intellectual); font-weight: 700; text-decoration: underline;">3. עיון במקורות וברשומות ההוכחה</a>.
       </p>
     </div>
   `;

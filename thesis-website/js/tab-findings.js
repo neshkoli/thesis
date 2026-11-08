@@ -411,33 +411,6 @@ function setupComparator() {
 
     // Render multi-dimensional mini comparison chart
     renderComparatorChart("comparatorMiniChart", nA, nB);
-
-    // Render representative textual proof cards
-    if (passagesContainer) {
-      const fileA = getFilenameForNasi(nA.nasi_name);
-      const fileB = getFilenameForNasi(nB.nasi_name);
-      const prefA = nA.external_pct > 20 ? "ext" : (nA.institutional_pct > 30 ? "inst" : "intel");
-      const prefB = nB.external_pct > 20 ? "ext" : (nB.institutional_pct > 30 ? "inst" : "intel");
-
-      const pA = getRepresentativePassage(fileA, prefA);
-      const pB = getRepresentativePassage(fileB, prefB);
-
-      passagesContainer.innerHTML = `
-        ${renderEvidenceCard(nA.display_name, fileA, pA)}
-        ${renderEvidenceCard(nB.display_name, fileB, pB)}
-      `;
-
-      // Attach click listeners to open in Tab 2 Viewer
-      passagesContainer.querySelectorAll(".btn-open-in-viewer").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const fn = btn.getAttribute("data-filename");
-          const pid = parseInt(btn.getAttribute("data-id"), 10);
-          showPassageInViewer(fn, pid);
-        });
-      });
-    }
-
-    if (window.lucide) window.lucide.createIcons();
   }
 
   selA.addEventListener("change", updateComparison);

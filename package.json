@@ -1,0 +1,11 @@
+{
+  "name": "patriarchate-taxonomy-website",
+  "version": "1.0.0",
+  "description": "אתר מחקר מלווה לתזת מוסמך: תמורות בתפקיד הנשיא",
+  "scripts": {
+    "dev": "python3 -m http.server 8000 --directory thesis-website",
+    "start": "python3 -m http.server 8000 --directory thesis-website",
+    "bundle": "python3 thesis-website/bundle_data.py",
+    "verify": "python3 thesis-website/verify_phase1.py"
+  }
+}

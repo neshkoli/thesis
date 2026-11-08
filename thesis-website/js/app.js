@@ -59,7 +59,9 @@ function setupTabRouting() {
   // Handle URL hash on initial load & popstate
   function handleHash() {
     const rawHash = (window.location.hash || "").replace("#", "").trim();
-    if (rawHash === "viewer") {
+    if (rawHash === "prompts" || rawHash === "architecture") {
+      switchTab("tab-prompts", false);
+    } else if (rawHash === "viewer") {
       switchTab("tab-viewer", false);
     } else if (rawHash === "findings") {
       switchTab("tab-findings", false);
